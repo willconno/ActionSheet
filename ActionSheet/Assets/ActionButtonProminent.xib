@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ActionButton" customModule="ActionSheet" customModuleProvider="target">
+            <connections>
+                <outlet property="backgroundView" destination="m9h-Eo-IFx" id="ylJ-3D-nUV"/>
+                <outlet property="seperatorView" destination="P3n-DP-tiQ" id="lEh-xh-Gof"/>
+                <outlet property="titleLabel" destination="6cK-BR-GHz" id="qZg-f8-25Y"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="aqA-2S-gSd">
+            <rect key="frame" x="0.0" y="0.0" width="488" height="58"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="m9h-Eo-IFx">
+                    <rect key="frame" x="0.0" y="0.0" width="488" height="58"/>
+                    <color key="backgroundColor" red="0.97261804340000002" green="0.97646111250000001" blue="0.97636729479999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <view contentMode="scaleToFill" horizontalHuggingPriority="100" verticalHuggingPriority="100" horizontalCompressionResistancePriority="100" verticalCompressionResistancePriority="100" translatesAutoresizingMaskIntoConstraints="NO" id="P3n-DP-tiQ">
+                    <rect key="frame" x="0.0" y="57.5" width="488" height="0.5"/>
+                    <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="zBR-Br-sKd"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Sample 5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="6cK-BR-GHz">
+                    <rect key="frame" x="201" y="17" width="86" height="24"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                    <color key="textColor" red="0.2116047144" green="0.47851395610000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="6cK-BR-GHz" firstAttribute="centerY" secondItem="aqA-2S-gSd" secondAttribute="centerY" id="1X3-n3-Yk2"/>
+                <constraint firstItem="6cK-BR-GHz" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="aqA-2S-gSd" secondAttribute="leading" priority="1" constant="64" id="7Sf-nf-u7N"/>
+                <constraint firstItem="P3n-DP-tiQ" firstAttribute="leading" secondItem="aqA-2S-gSd" secondAttribute="leading" id="C6U-jR-DMz"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="6cK-BR-GHz" secondAttribute="trailing" priority="1" constant="64" id="HL5-zZ-8T5"/>
+                <constraint firstAttribute="bottom" secondItem="P3n-DP-tiQ" secondAttribute="bottom" id="SZx-jX-suj"/>
+                <constraint firstAttribute="trailing" secondItem="m9h-Eo-IFx" secondAttribute="trailing" id="XP8-w5-8Es"/>
+                <constraint firstAttribute="bottom" secondItem="m9h-Eo-IFx" secondAttribute="bottom" id="aTv-bM-3IY"/>
+                <constraint firstItem="6cK-BR-GHz" firstAttribute="centerX" secondItem="aqA-2S-gSd" secondAttribute="centerX" id="ikY-fa-owq"/>
+                <constraint firstItem="m9h-Eo-IFx" firstAttribute="leading" secondItem="aqA-2S-gSd" secondAttribute="leading" id="jbv-34-pSZ"/>
+                <constraint firstItem="m9h-Eo-IFx" firstAttribute="top" secondItem="aqA-2S-gSd" secondAttribute="top" id="jnI-hI-zua"/>
+                <constraint firstAttribute="trailing" secondItem="P3n-DP-tiQ" secondAttribute="trailing" id="v2h-aR-4iP"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="185.50724637681162" y="318.08035714285711"/>
+        </view>
+    </objects>
+</document>

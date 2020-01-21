@@ -31,6 +31,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'ActionSheet/Classes/**/*'
+  s.source_files = 'ActionSheet/Assets/**/*'
   s.swift_versions = '4.0'
   
   # s.resource_bundles = {

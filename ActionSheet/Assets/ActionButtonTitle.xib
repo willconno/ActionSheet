@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ActionSheetTitleView" customModule="ActionSheet" customModuleProvider="target">
+            <connections>
+                <outlet property="subtitleLabel" destination="VI9-RL-Re0" id="ghQ-jk-RBd"/>
+                <outlet property="titleLabel" destination="F68-Om-IkM" id="xLz-Kj-uh8"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" id="1ub-FS-rQB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" horizontalHuggingPriority="100" verticalHuggingPriority="100" horizontalCompressionResistancePriority="100" verticalCompressionResistancePriority="100" translatesAutoresizingMaskIntoConstraints="NO" id="qOm-9Q-bu9">
+                    <rect key="frame" x="0.0" y="895.5" width="414" height="0.5"/>
+                    <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="oBC-S4-eIU"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999998807907104" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F68-Om-IkM">
+                    <rect key="frame" x="24.5" y="16" width="365" height="33.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VI9-RL-Re0">
+                    <rect key="frame" x="25" y="61.5" width="364" height="50.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.57641839979999998" green="0.57650405169999996" blue="0.57639968399999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="F68-Om-IkM" secondAttribute="trailing" constant="24" id="2eu-IA-gfc"/>
+                <constraint firstItem="VI9-RL-Re0" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="1ub-FS-rQB" secondAttribute="leading" constant="24" id="3uI-Ze-cR7"/>
+                <constraint firstItem="F68-Om-IkM" firstAttribute="centerX" secondItem="1ub-FS-rQB" secondAttribute="centerX" id="460-ut-tTc"/>
+                <constraint firstItem="qOm-9Q-bu9" firstAttribute="leading" secondItem="1ub-FS-rQB" secondAttribute="leading" id="8ts-n0-JaG"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="VI9-RL-Re0" secondAttribute="trailing" constant="24" id="D7q-Au-dva"/>
+                <constraint firstItem="VI9-RL-Re0" firstAttribute="centerX" secondItem="1ub-FS-rQB" secondAttribute="centerX" id="DAM-6f-Bbc"/>
+                <constraint firstItem="F68-Om-IkM" firstAttribute="top" secondItem="1ub-FS-rQB" secondAttribute="top" constant="16" id="ZXK-Hc-LmH"/>
+                <constraint firstItem="VI9-RL-Re0" firstAttribute="top" secondItem="F68-Om-IkM" secondAttribute="bottom" constant="12" id="dNm-l9-UJG"/>
+                <constraint firstAttribute="trailing" secondItem="qOm-9Q-bu9" secondAttribute="trailing" id="j4n-il-TSh"/>
+                <constraint firstItem="F68-Om-IkM" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="1ub-FS-rQB" secondAttribute="leading" constant="24" id="l6q-va-PgV"/>
+                <constraint firstAttribute="bottom" secondItem="qOm-9Q-bu9" secondAttribute="bottom" id="npA-zZ-TUQ"/>
+                <constraint firstAttribute="bottom" secondItem="VI9-RL-Re0" secondAttribute="bottom" priority="750" constant="24" id="zHv-cM-rwY"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="-492"/>
+        </view>
+    </objects>
+</document>
