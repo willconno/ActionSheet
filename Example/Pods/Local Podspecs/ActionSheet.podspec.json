@@ -1,0 +1,22 @@
+{
+  "name": "ActionSheet",
+  "version": "0.1.0",
+  "summary": "A short description of ActionSheet.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/William Connelly/ActionSheet",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "William Connelly": "connelly.william@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/William Connelly/ActionSheet.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "ActionSheet/Classes/**/*"
+}
