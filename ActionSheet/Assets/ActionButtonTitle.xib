@@ -7,14 +7,14 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ActionSheetTitleView" customModule="ActionSheet" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner">
             <connections>
                 <outlet property="subtitleLabel" destination="VI9-RL-Re0" id="ghQ-jk-RBd"/>
                 <outlet property="titleLabel" destination="F68-Om-IkM" id="xLz-Kj-uh8"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" id="1ub-FS-rQB">
+        <view clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" id="1ub-FS-rQB" customClass="ActionSheetTitleView" customModule="ActionSheet" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
@@ -54,6 +54,10 @@
                 <constraint firstAttribute="bottom" secondItem="qOm-9Q-bu9" secondAttribute="bottom" id="npA-zZ-TUQ"/>
                 <constraint firstAttribute="bottom" secondItem="VI9-RL-Re0" secondAttribute="bottom" priority="750" constant="24" id="zHv-cM-rwY"/>
             </constraints>
+            <connections>
+                <outlet property="subtitleLabel" destination="VI9-RL-Re0" id="KFU-mu-CpA"/>
+                <outlet property="titleLabel" destination="F68-Om-IkM" id="uUG-J1-2uo"/>
+            </connections>
             <point key="canvasLocation" x="132" y="-492"/>
         </view>
     </objects>

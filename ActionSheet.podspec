@@ -28,15 +28,14 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/willconno/ActionSheet.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
   s.source_files = 'ActionSheet/Classes/**/*'
-  s.source_files = 'ActionSheet/Assets/**/*'
   s.swift_versions = '4.0'
   
-  # s.resource_bundles = {
-  #   'ActionSheet' => ['ActionSheet/Assets/*.png']
-  # }
+   s.resource_bundles = {
+     'ActionSheet' => ['ActionSheet/Assets/*']
+   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

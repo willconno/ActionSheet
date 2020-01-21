@@ -33,21 +33,22 @@ class ActionSheetPresenter: NSObject, UIViewControllerAnimatedTransitioning, UIV
         
         if isPresenting {
             // Any presented views must be part of the container view's hierarchy
-            transitionContext.containerView.addSubview(workingView)
             
             let backgroundView = UIView(frame: CGRect(origin: .zero, size: screenSize))
             backgroundView.tag = BACKGROUND_VIEW_TAG
             backgroundView.backgroundColor = UIColor.black.withAlphaComponent(0.15)
             backgroundView.alpha = 0
-            presenterView.addSubview(backgroundView)
+            transitionContext.containerView.addSubview(backgroundView)
 
+            transitionContext.containerView.addSubview(workingView)
+            
             UIView.animate(withDuration: 0.3) {
                 backgroundView.alpha = 1
             }
             
         } else {
             
-            if let view = presenterView.subviews.first(where: {$0.tag == BACKGROUND_VIEW_TAG}) {
+            if let view = transitionContext.containerView.subviews.first(where: {$0.tag == BACKGROUND_VIEW_TAG}) {
                 
                 UIView.animate(withDuration: 0.3, animations: {
                     view.alpha = 0

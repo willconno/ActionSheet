@@ -11,7 +11,7 @@
         <!--Action Sheet Controller-->
         <scene sceneID="QGV-FN-AcD">
             <objects>
-                <viewController storyboardIdentifier="ActionSheetController" modalPresentationStyle="overCurrentContext" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4to-Og-x27" customClass="ActionSheetController" customModule="ActionSheet" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ActionSheetController" modalPresentationStyle="overCurrentContext" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4to-Og-x27" customClass="ActionSheetController" customModule="ActionSheet" sceneMemberID="viewController">
                     <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="aUC-Qb-NDl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

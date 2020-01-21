@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-internal class ActionSheetController: UIViewController {
+public class ActionSheetController: UIViewController {
     @IBOutlet var backgroundView: UIView!
     
     /// insert new items at index 0 to mainContainer
@@ -18,7 +18,7 @@ internal class ActionSheetController: UIViewController {
     @IBOutlet  var primaryButtonContainer: UIStackView?
     @IBOutlet  var actionButtonContainer: UIStackView?
     
-    override func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
         backgroundView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(animateOut)))
 
@@ -58,7 +58,7 @@ internal class ActionSheetController: UIViewController {
     private var primaryButtons = [ActionButton]()
     private var heroButtons = [ActionButton]()
     
-    func dismiss() {
+    public func dismiss() {
         animateOut()
     }
     
@@ -70,7 +70,7 @@ internal class ActionSheetController: UIViewController {
     }
     
     static func createInstance(builder: ActionSheet) -> ActionSheetController? {
-        guard let result = UIStoryboard(name: "ActionSheet", bundle: Bundle(identifier: "ActionSheet")).instantiateViewController(withIdentifier: "ActionSheetController") as? ActionSheetController else {
+        guard let result = UIStoryboard(name: "ActionSheet", bundle: Bundle(for: ActionSheetController.self)).instantiateViewController(withIdentifier: "ActionSheetController") as? ActionSheetController else {
             return nil
         }
         
@@ -88,7 +88,7 @@ internal class ActionSheetController: UIViewController {
     }
 }
 
-enum ActionButtonLocation {
+public enum ActionButtonLocation {
     
     /// The primary container
     case body
@@ -100,7 +100,7 @@ enum ActionButtonLocation {
 }
 
 
-class ActionSheet {
+public class ActionSheet {
     
     let title: String?
     let message: String?
@@ -108,16 +108,16 @@ class ActionSheet {
     
     weak private var actionSheetController: ActionSheetController?
     
-    internal var primaryButtons = [ActionButton]()
-    internal var actionButtons = [ActionButton]()
-    internal var heroButtons = [ActionButton]()
+    public var primaryButtons = [ActionButton]()
+    public var actionButtons = [ActionButton]()
+    public var heroButtons = [ActionButton]()
     
-    init(title: String? = nil, message: String? = nil) {
+    public init(title: String? = nil, message: String? = nil) {
         self.title = title
         self.message = message
     }
     
-    func present(_ presenter: UIViewController) {
+    public func present(_ presenter: UIViewController) {
         if let result = ActionSheetController.createInstance(builder: self) {
             self.actionSheetController = result
             result.transitioningDelegate = self.presenter
@@ -126,7 +126,7 @@ class ActionSheet {
         }
     }
     
-    func addAction(location: ActionButtonLocation, _ actionButton: ActionButton) {
+    public func addAction(location: ActionButtonLocation, _ actionButton: ActionButton) {
         switch location {
             
             case .body:
@@ -138,7 +138,7 @@ class ActionSheet {
         }
     }
     
-    func dismiss(){
+    public func dismiss(){
         actionSheetController?.dismiss()
         actionSheetController = nil
     }

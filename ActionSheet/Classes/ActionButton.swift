@@ -30,7 +30,7 @@ protocol ActionButtonProminentProtocol: ActionButtonProtocol {
     init(title: String)
 }
 
-enum ActionButtonAction {
+public enum ActionButtonAction {
     case primary, secondary
 }
 
@@ -38,7 +38,7 @@ enum ActionButtonTextLocation {
     
 }
 
-enum ActionButtonOption {
+public enum ActionButtonOption {
     case fontTint
     
     /// Image tint will only be used if the `style` of `ActionButton` is set to the `ActionButtonStyle` `image` or `double`
@@ -56,7 +56,7 @@ enum ActionButtonOption {
     case textAlignment
 }
 
-open class ActionButton: UIView {
+public  class ActionButton: UIView {
     
     /// The core style of the action button
     var style: ActionButtonStyle = .normal
@@ -99,7 +99,7 @@ open class ActionButton: UIView {
         commonInit()
     }
     
-    convenience init(title: String, style: ActionButtonStyle, options: [ActionButtonOption: Any]? = nil, handler: @escaping (ActionButtonAction) -> () = {_ in})  {
+    public convenience init(title: String, style: ActionButtonStyle, options: [ActionButtonOption: Any]? = nil, handler: @escaping (ActionButtonAction) -> () = {_ in})  {
         self.init(frame: CGRect.zero)
         
         self.title = title
@@ -119,8 +119,8 @@ open class ActionButton: UIView {
     }
     
     private func commonInit() {
-        contentView = Bundle.main.loadNibNamed(style.rawValue, owner: self, options: nil)?.first as? UIView
-        
+//        contentView = Bundle(for: ActionButton.self).loadNibNamed(style.rawValue, owner: nil, options: nil)?.first as? UIView
+        contentView = UINib(nibName: style.rawValue, bundle: Bundle(for: ActionButton.self)).instantiate(withOwner: self, options: nil).first as! ActionButton
         addSubview(contentView)
         seperatorView?.isHidden = true
         backgroundColor = UIColor.clear
@@ -215,7 +215,7 @@ open class ActionButton: UIView {
     }
 }
 
-enum ActionButtonStyle: String {
+public enum ActionButtonStyle: String {
     /// Displays a diclosure indicator to the right of the label
     case disclosure = "ActionButtonDisclosure"
     /// Adds an optional image to the left of the label
@@ -274,8 +274,8 @@ open class ActionSheetTitleView: UIView {
     }
     
     private func commonInit() {
-        contentView = Bundle.main.loadNibNamed("ActionButtonTitle", owner: self, options: nil)?.first as? UIView
-        
+        contentView = UINib(nibName: "ActionButtonTitle", bundle: Bundle(for: ActionButton.self)).instantiate(withOwner: self, options: nil).first as! ActionSheetTitleView
+
         addSubview(contentView)
         backgroundColor = UIColor.clear
         
