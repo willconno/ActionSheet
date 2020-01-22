@@ -13,10 +13,11 @@ public class ActionSheetController: UIViewController {
     @IBOutlet var backgroundView: UIView!
     
     /// insert new items at index 0 to mainContainer
-    @IBOutlet  var mainContainer: UIStackView?
+    @IBOutlet var containerView: UIStackView!
+    @IBOutlet var mainContainer: UIStackView?
     
-    @IBOutlet  var primaryButtonContainer: UIStackView?
-    @IBOutlet  var actionButtonContainer: UIStackView?
+    @IBOutlet var primaryButtonContainer: UIStackView?
+    @IBOutlet var actionButtonContainer: UIStackView?
     
     override public func viewDidLoad() {
         super.viewDidLoad()
@@ -70,7 +71,7 @@ public class ActionSheetController: UIViewController {
     }
     
     static func createInstance(builder: ActionSheet) -> ActionSheetController? {
-        guard let result = UIStoryboard(name: "ActionSheet", bundle: Bundle(for: ActionSheetController.self)).instantiateViewController(withIdentifier: "ActionSheetController") as? ActionSheetController else {
+        guard let result = UIStoryboard(name: "ActionSheet", bundle: Bundle(identifier: "org.cocoapods.ActionSheet")).instantiateViewController(withIdentifier: "ActionSheetController") as? ActionSheetController else {
             return nil
         }
         
@@ -104,7 +105,7 @@ public class ActionSheet {
     
     let title: String?
     let message: String?
-    let presenter = ActionSheetPresenter()
+    var presenter: ActionSheetPresenter? = ActionSheetPresenter()
     
     weak private var actionSheetController: ActionSheetController?
     
@@ -121,7 +122,8 @@ public class ActionSheet {
         if let result = ActionSheetController.createInstance(builder: self) {
             self.actionSheetController = result
             result.transitioningDelegate = self.presenter
-            result.modalPresentationStyle = .overCurrentContext
+            result.modalPresentationStyle = .custom
+            presenter.transitioningDelegate = self.presenter
             presenter.present(result, animated: true, completion: nil)
         }
     }
@@ -141,6 +143,10 @@ public class ActionSheet {
     public func dismiss(){
         actionSheetController?.dismiss()
         actionSheetController = nil
+//        presenter = nil
+        primaryButtons.forEach({$0.removeFromSuperview()})
+        actionButtons.forEach({$0.removeFromSuperview()})
+        heroButtons.forEach({$0.removeFromSuperview()})
     }
     
     deinit {

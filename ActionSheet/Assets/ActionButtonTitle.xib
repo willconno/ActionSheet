@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ActionButton" customModule="ActionSheet" customModuleProvider="target">
             <connections>
                 <outlet property="subtitleLabel" destination="VI9-RL-Re0" id="ghQ-jk-RBd"/>
                 <outlet property="titleLabel" destination="F68-Om-IkM" id="xLz-Kj-uh8"/>

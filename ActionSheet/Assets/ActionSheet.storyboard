@@ -11,7 +11,7 @@
         <!--Action Sheet Controller-->
         <scene sceneID="QGV-FN-AcD">
             <objects>
-                <viewController storyboardIdentifier="ActionSheetController" modalPresentationStyle="overCurrentContext" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4to-Og-x27" customClass="ActionSheetController" customModule="ActionSheet" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ActionSheetController" modalPresentationStyle="overFullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4to-Og-x27" customClass="ActionSheetController" customModule="ActionSheet" sceneMemberID="viewController">
                     <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="aUC-Qb-NDl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -134,6 +134,7 @@
                     <connections>
                         <outlet property="actionButtonContainer" destination="xHs-Od-95G" id="kAT-6R-bBn"/>
                         <outlet property="backgroundView" destination="KfI-bd-zff" id="6mp-Xc-XXa"/>
+                        <outlet property="containerView" destination="1Ld-W0-S8z" id="oYG-m5-4yG"/>
                         <outlet property="mainContainer" destination="V71-ta-Dm7" id="wOY-aC-8fz"/>
                         <outlet property="primaryButtonContainer" destination="Wnu-dT-0E1" id="rwe-1O-E9C"/>
                     </connections>

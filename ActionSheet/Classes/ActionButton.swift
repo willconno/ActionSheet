@@ -87,7 +87,6 @@ public  class ActionButton: UIView {
     @IBOutlet var titleLabel: UILabel?
     @IBOutlet var subtitleLabel: UILabel?
     
-    @IBOutlet weak var imageView: UIImageView?
     @IBOutlet weak var leftImageView: UIImageView?
     @IBOutlet weak var rightImageView: UIImageView?
     
@@ -119,8 +118,9 @@ public  class ActionButton: UIView {
     }
     
     private func commonInit() {
-//        contentView = Bundle(for: ActionButton.self).loadNibNamed(style.rawValue, owner: nil, options: nil)?.first as? UIView
-        contentView = UINib(nibName: style.rawValue, bundle: Bundle(for: ActionButton.self)).instantiate(withOwner: self, options: nil).first as! ActionButton
+        let bundle = Bundle(for: Self.self).url(forResource: "ActionSheet", withExtension: "bundle")!
+        contentView = UINib(nibName: style.rawValue, bundle: Bundle(url: bundle)).instantiate(withOwner: self, options: nil).first as! ActionButton
+        
         addSubview(contentView)
         seperatorView?.isHidden = true
         backgroundColor = UIColor.clear
@@ -196,7 +196,7 @@ public  class ActionButton: UIView {
     }
     
     private func setHeroImage(_ image: UIImage?) {
-        imageView?.image = image
+        leftImageView?.image = image
     }
     
     private func setLeftImage(_ image: UIImage?) {
@@ -274,7 +274,7 @@ open class ActionSheetTitleView: UIView {
     }
     
     private func commonInit() {
-        contentView = UINib(nibName: "ActionButtonTitle", bundle: Bundle(for: ActionButton.self)).instantiate(withOwner: self, options: nil).first as! ActionSheetTitleView
+        contentView = UINib(nibName: "ActionButtonTitle", bundle: Bundle(identifier: "org.cocoapods.ActionSheet")).instantiate(withOwner: self, options: nil).first as! ActionSheetTitleView
 
         addSubview(contentView)
         backgroundColor = UIColor.clear

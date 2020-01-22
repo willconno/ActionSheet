@@ -20,7 +20,7 @@ class ViewController: UIViewController {
 //        sheet.addAction(location: .bottom, ActionButton(title: "Cancel", style: .prominent, handler: { action in
 //            sheet.dismiss()
 //        }))
-//        
+////
 //        sheet.addAction(location: .body, ActionButton(title: "Option 1", style: .image, handler: { action in
 //            print("awdawd!")
 //        }))
@@ -37,10 +37,10 @@ class ViewController: UIViewController {
 //        sheet.addAction(location: .body, ActionButton(title: "Normal Button", style: .normal, handler: { action in
 //            print("Normal button clicked!")
 //        }))
-//        sheet.addAction(location: .hero, ActionButton(title: "Center", style: .hero, options: [.images : [UIImage(named: "house")]], handler: { action in
+//        sheet.addAction(location: .hero, ActionButton(title: "Center", style: .hero, handler: { action in
 //            print("Hero image clicked!")
 //        }))
-//        
+////
         sheet.present(self)
     }
     

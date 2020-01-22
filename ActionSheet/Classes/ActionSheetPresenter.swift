@@ -10,7 +10,7 @@ import UIKit
 
 class ActionSheetPresenter: NSObject, UIViewControllerAnimatedTransitioning, UIViewControllerTransitioningDelegate {
     
-    let BACKGROUND_VIEW_TAG = 999
+    let BACKGROUND_VIEW_TAG = 111
     
     private var isPresenting = true
     
@@ -39,7 +39,6 @@ class ActionSheetPresenter: NSObject, UIViewControllerAnimatedTransitioning, UIV
             backgroundView.backgroundColor = UIColor.black.withAlphaComponent(0.15)
             backgroundView.alpha = 0
             transitionContext.containerView.addSubview(backgroundView)
-
             transitionContext.containerView.addSubview(workingView)
             
             UIView.animate(withDuration: 0.3) {
@@ -75,11 +74,13 @@ class ActionSheetPresenter: NSObject, UIViewControllerAnimatedTransitioning, UIV
                 workingView.frame = self.isPresenting ? onScreenFrame : offScreenFrame
             }, completion: { (success) in
             
+                if success {
                 if !self.isPresenting {
                     workingView.removeFromSuperview()
                 }
                 
                 transitionContext.completeTransition(success)
+                }
             })
     }
     
