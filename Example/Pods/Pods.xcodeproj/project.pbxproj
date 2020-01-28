@@ -65,7 +65,7 @@
 		2033DB000C920AB569F996476044D3FC /* Pods-ActionSheet_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ActionSheet_Example-frameworks.sh"; sourceTree = "<group>"; };
 		269F22CF9970B0191306D60ECF24822F /* Pods-ActionSheet_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ActionSheet_Tests-Info.plist"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		34DB0E1BC75FD9C117EED0D63FEA5262 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		34DB0E1BC75FD9C117EED0D63FEA5262 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		3D778C225FDE7E804F344BE471D9B511 /* ActionButtonHeader.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ActionButtonHeader.xib; path = ActionSheet/Assets/ActionButtonHeader.xib; sourceTree = "<group>"; };
 		3D842082342D7B72D5E2F3C307F9B993 /* ActionButtonNormal.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ActionButtonNormal.xib; path = ActionSheet/Assets/ActionButtonNormal.xib; sourceTree = "<group>"; };
 		42039D076F57138360990E0C1CDADC82 /* ActionSheet-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ActionSheet-umbrella.h"; sourceTree = "<group>"; };
@@ -75,31 +75,31 @@
 		4E323503DE3A3B146C29F9FE88D960CE /* ActionSheet-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ActionSheet-dummy.m"; sourceTree = "<group>"; };
 		62B9EBDEEB0CD9439F5984476E87430B /* ActionButtonTitle.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ActionButtonTitle.xib; path = ActionSheet/Assets/ActionButtonTitle.xib; sourceTree = "<group>"; };
 		6B48BAF3266DEF8E3324AA32C9294A9A /* Pods-ActionSheet_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ActionSheet_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		7019220C9675CE150EBFE333B4066883 /* Pods_ActionSheet_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ActionSheet_Tests.framework; path = "Pods-ActionSheet_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7019220C9675CE150EBFE333B4066883 /* Pods_ActionSheet_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ActionSheet_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		72E3A78785FA24CF3119B6AC979B836F /* ActionButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ActionButton.swift; path = ActionSheet/Classes/ActionButton.swift; sourceTree = "<group>"; };
 		748E1386F1E20F32A2014371E4AC4BF2 /* ActionSheet-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ActionSheet-prefix.pch"; sourceTree = "<group>"; };
 		7DEE6311F09269E8A04478E3C5D0FC6D /* Pods-ActionSheet_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ActionSheet_Example-Info.plist"; sourceTree = "<group>"; };
 		84947FE7FA76BC382FE3FBC33FDC50D2 /* ActionButtonDouble.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ActionButtonDouble.xib; path = ActionSheet/Assets/ActionButtonDouble.xib; sourceTree = "<group>"; };
 		8ECE0E8ABF06764C2CBFB7AC11BFF195 /* Pods-ActionSheet_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ActionSheet_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		926D3945B52BC18E5DB4854CB3F8FB07 /* ActionButtonDisclosure.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ActionButtonDisclosure.xib; path = ActionSheet/Assets/ActionButtonDisclosure.xib; sourceTree = "<group>"; };
-		96047FA34D006EFE876DC071E9A5DA90 /* ActionSheet.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ActionSheet.bundle; path = "ActionSheet-ActionSheet.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		96047FA34D006EFE876DC071E9A5DA90 /* ActionSheet.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ActionSheet.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		964076ABBBC139C55EDFF707982EE7EE /* ActionSheet.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ActionSheet.xcconfig; sourceTree = "<group>"; };
 		9ACBDB6BFAD3400789E32754782FF626 /* Pods-ActionSheet_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ActionSheet_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		9B783546E74334E00F7D324FA34A2CF6 /* ActionSheet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ActionSheet.swift; path = ActionSheet/Classes/ActionSheet.swift; sourceTree = "<group>"; };
-		9BC127DE7E2B92C587BEC30D793C7B4E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9BC127DE7E2B92C587BEC30D793C7B4E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B892FC4D2EF3B008B80B372669E11721 /* Pods-ActionSheet_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ActionSheet_Tests.modulemap"; sourceTree = "<group>"; };
 		C0DB644EFF286FC0ED9B7EB6DD725409 /* Pods-ActionSheet_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ActionSheet_Example.modulemap"; sourceTree = "<group>"; };
 		CF81D93A51B2FB35A8D388983DED2ED7 /* Pods-ActionSheet_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ActionSheet_Example-dummy.m"; sourceTree = "<group>"; };
-		D03F64E7B55FB9B1BF1932E62868B583 /* ActionSheet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ActionSheet.framework; path = ActionSheet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D03F64E7B55FB9B1BF1932E62868B583 /* ActionSheet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ActionSheet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4F37D0D9F3E73F468D16FCA8F8F267B /* Pods-ActionSheet_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ActionSheet_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		D786A46D694DF41E8941DC4322CDC8A3 /* Pods-ActionSheet_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ActionSheet_Example-umbrella.h"; sourceTree = "<group>"; };
 		DA553D4C10CD783B22EE79A59778E412 /* Pods-ActionSheet_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ActionSheet_Tests-umbrella.h"; sourceTree = "<group>"; };
 		DD939BB3D8E1689218ECCD9E906AEFB0 /* ActionSheet.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = ActionSheet.storyboard; path = ActionSheet/Assets/ActionSheet.storyboard; sourceTree = "<group>"; };
-		E02A3ED5BD1BB52F998F56A4552D4096 /* Pods_ActionSheet_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ActionSheet_Example.framework; path = "Pods-ActionSheet_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E02A3ED5BD1BB52F998F56A4552D4096 /* Pods_ActionSheet_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ActionSheet_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E61B4724749832965C000137CCF7FD74 /* ActionButtonImage.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ActionButtonImage.xib; path = ActionSheet/Assets/ActionButtonImage.xib; sourceTree = "<group>"; };
 		E85A6A33EF02D9E314E527384EF30CC4 /* Pods-ActionSheet_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ActionSheet_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		E88C7F0F03618415D59BF330130FC381 /* ActionSheet.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ActionSheet.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		E88C7F0F03618415D59BF330130FC381 /* ActionSheet.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = ActionSheet.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		EC898F4F18AE501398F914E976315A3F /* ActionSheetPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ActionSheetPresenter.swift; path = ActionSheet/Classes/ActionSheetPresenter.swift; sourceTree = "<group>"; };
 		F2903855AE8C86E067C882DBBD92835C /* ActionButtonProminent.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ActionButtonProminent.xib; path = ActionSheet/Assets/ActionButtonProminent.xib; sourceTree = "<group>"; };
 		F6B338563C07FFCBC28BA712FDC24BBA /* ActionSheet-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ActionSheet-Info.plist"; sourceTree = "<group>"; };
@@ -155,6 +155,7 @@
 				926D3945B52BC18E5DB4854CB3F8FB07 /* ActionButtonDisclosure.xib */,
 				84947FE7FA76BC382FE3FBC33FDC50D2 /* ActionButtonDouble.xib */,
 				3D778C225FDE7E804F344BE471D9B511 /* ActionButtonHeader.xib */,
+				34DB0E1BC75FD9C117EED0D63FEA5262 /* LICENSE */,
 				E61B4724749832965C000137CCF7FD74 /* ActionButtonImage.xib */,
 				3D842082342D7B72D5E2F3C307F9B993 /* ActionButtonNormal.xib */,
 				F2903855AE8C86E067C882DBBD92835C /* ActionButtonProminent.xib */,
@@ -169,7 +170,6 @@
 			isa = PBXGroup;
 			children = (
 				E88C7F0F03618415D59BF330130FC381 /* ActionSheet.podspec */,
-				34DB0E1BC75FD9C117EED0D63FEA5262 /* LICENSE */,
 				9BC127DE7E2B92C587BEC30D793C7B4E /* README.md */,
 			);
 			name = Pod;
@@ -687,8 +687,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};

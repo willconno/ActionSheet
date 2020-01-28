@@ -38,26 +38,36 @@ class ActionSheetPresenter: NSObject, UIViewControllerAnimatedTransitioning, UIV
             backgroundView.tag = BACKGROUND_VIEW_TAG
             backgroundView.backgroundColor = UIColor.black.withAlphaComponent(0.15)
             backgroundView.alpha = 0
-            transitionContext.containerView.addSubview(backgroundView)
+            
+            presenterView.insertSubview(backgroundView, at: 0)
             transitionContext.containerView.addSubview(workingView)
             
-            UIView.animate(withDuration: 0.3) {
+            UIView.animate(withDuration: 0.3, animations: {
                 backgroundView.alpha = 1
+            }) { completed in
+                if completed {
+                    backgroundView.removeFromSuperview()
+                }
             }
-            
         } else {
             
-            if let view = transitionContext.containerView.subviews.first(where: {$0.tag == BACKGROUND_VIEW_TAG}) {
+            let backgroundView = UIView(frame: CGRect(origin: .zero, size: screenSize))
+            backgroundView.tag = BACKGROUND_VIEW_TAG
+            backgroundView.backgroundColor = UIColor.black.withAlphaComponent(0.15)
+            backgroundView.alpha = 1
+            
+            transitionContext.containerView.insertSubview(backgroundView, at: 0)
+//            if let view = presenterView.subviews.first(where: {$0.tag == BACKGROUND_VIEW_TAG}) {
                 
                 UIView.animate(withDuration: 0.3, animations: {
-                    view.alpha = 0
+                    backgroundView.alpha = 0
                 }) { completed in
                     if completed {
-                        view.removeFromSuperview()
+//                        backgroundView.removeFromSuperview()
                     }
                 }
                 
-            }
+//            }
         }
         
         let offScreenFrame = CGRect(origin: CGPoint(x: .zero, y: screenSize.height), size: screenSize)

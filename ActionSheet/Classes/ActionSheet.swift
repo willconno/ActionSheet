@@ -23,6 +23,7 @@ public class ActionSheetController: UIViewController {
         super.viewDidLoad()
         backgroundView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(animateOut)))
 
+        
         if titleText != nil || subtitleText != nil {
             let titleView = ActionSheetTitleView(title: titleText, message: subtitleText)
             actionButtonContainer?.addArrangedSubview(titleView)
@@ -53,6 +54,44 @@ public class ActionSheetController: UIViewController {
         
     }
     
+    public override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        animate(isPresenting: true)
+    }
+    
+    func animate(isPresenting: Bool) {
+        
+        let screenSize = CGSize(
+            width: UIScreen.main.bounds.size.width,
+            height: UIScreen.main.bounds.size.height)
+        
+        let offScreenFrame = CGRect(origin: CGPoint(x: .zero, y: screenSize.height), size: screenSize)
+        //Move all views off screen
+        if isPresenting {
+            self.containerView.frame = CGRect(origin: CGPoint(x: .zero, y: self.containerView.frame.size.height), size: self.containerView.frame.size)
+            self.backgroundView.alpha = 0
+        }
+        
+        
+        UIView.animate(
+            withDuration: 0.4,
+            delay:0.0,
+            usingSpringWithDamping: 1,
+            initialSpringVelocity: 0,
+            animations: {
+                self.containerView.frame = isPresenting ? CGRect(origin: .zero, size: screenSize) : CGRect(origin: CGPoint(x: self.containerView.frame.origin.x, y: screenSize.height), size: self.containerView.frame.size)
+                self.backgroundView.alpha = isPresenting ? 0.15 : 0
+        }, completion: { (success) in
+            
+            if success {
+                if !isPresenting {
+                    self.dismiss(animated: false)
+                }
+                
+            }
+        })
+    }
+    
     private var titleText: String?
     private var subtitleText: String?
     private var actionButtons = [ActionButton]()
@@ -63,11 +102,8 @@ public class ActionSheetController: UIViewController {
         animateOut()
     }
     
-    func animateIn() {
-    }
-    
     @objc func animateOut(_ sender: Any? = nil) {
-        dismiss(animated: true, completion: nil)
+        animate(isPresenting: false)
     }
     
     static func createInstance(builder: ActionSheet) -> ActionSheetController? {
@@ -121,10 +157,8 @@ public class ActionSheet {
     public func present(_ presenter: UIViewController) {
         if let result = ActionSheetController.createInstance(builder: self) {
             self.actionSheetController = result
-            result.transitioningDelegate = self.presenter
-            result.modalPresentationStyle = .custom
-            presenter.transitioningDelegate = self.presenter
-            presenter.present(result, animated: true, completion: nil)
+            result.modalPresentationStyle = .overFullScreen
+            presenter.present(result, animated: false, completion: nil)
         }
     }
     
@@ -142,11 +176,11 @@ public class ActionSheet {
     
     public func dismiss(){
         actionSheetController?.dismiss()
-        actionSheetController = nil
+//        actionSheetController = nil
 //        presenter = nil
-        primaryButtons.forEach({$0.removeFromSuperview()})
-        actionButtons.forEach({$0.removeFromSuperview()})
-        heroButtons.forEach({$0.removeFromSuperview()})
+//        primaryButtons.forEach({$0.removeFromSuperview()})
+//        actionButtons.forEach({$0.removeFromSuperview()})
+//        heroButtons.forEach({$0.removeFromSuperview()})
     }
     
     deinit {
