@@ -19,6 +19,11 @@
 		6E66D77713D662019E9A2F41B88C8ED1 /* Pods-ActionSheet_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DA553D4C10CD783B22EE79A59778E412 /* Pods-ActionSheet_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		79AAF64454F8AD1CE44D6BE68DBF707B /* ActionSheet-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E323503DE3A3B146C29F9FE88D960CE /* ActionSheet-dummy.m */; };
 		81A809715567667AD346EF1125A4C225 /* ActionButtonDouble.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84947FE7FA76BC382FE3FBC33FDC50D2 /* ActionButtonDouble.xib */; };
+		824816BC23E0694C008794D3 /* ActionSheet+Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824816BB23E0694C008794D3 /* ActionSheet+Controller.swift */; };
+		824816BE23E0696F008794D3 /* ActionSheet+Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824816BD23E0696F008794D3 /* ActionSheet+Enums.swift */; };
+		824816C023E069B1008794D3 /* ActionButton+Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824816BF23E069B1008794D3 /* ActionButton+Enums.swift */; };
+		824816C223E06A43008794D3 /* ActionButton+Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824816C123E06A43008794D3 /* ActionButton+Protocols.swift */; };
+		824816C423E06AC6008794D3 /* ActionSheetTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824816C323E06AC6008794D3 /* ActionSheetTitleView.swift */; };
 		836F9E1B719D4A4B0A7753FDAE842352 /* ActionSheet-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 42039D076F57138360990E0C1CDADC82 /* ActionSheet-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		97446FAEE7E6599A0F340660976F947F /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455633EEEA2800F223C55694D7BC5C9B /* ViewExtensions.swift */; };
 		9A3AC80B30DDF0EE74F8DDEC98AB0BC0 /* Pods-ActionSheet_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D786A46D694DF41E8941DC4322CDC8A3 /* Pods-ActionSheet_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -78,6 +83,11 @@
 		72E3A78785FA24CF3119B6AC979B836F /* ActionButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ActionButton.swift; path = ActionSheet/Classes/ActionButton.swift; sourceTree = "<group>"; };
 		748E1386F1E20F32A2014371E4AC4BF2 /* ActionSheet-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ActionSheet-prefix.pch"; sourceTree = "<group>"; };
 		7DEE6311F09269E8A04478E3C5D0FC6D /* Pods-ActionSheet_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ActionSheet_Example-Info.plist"; sourceTree = "<group>"; };
+		824816BB23E0694C008794D3 /* ActionSheet+Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ActionSheet+Controller.swift"; sourceTree = "<group>"; };
+		824816BD23E0696F008794D3 /* ActionSheet+Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ActionSheet+Enums.swift"; sourceTree = "<group>"; };
+		824816BF23E069B1008794D3 /* ActionButton+Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ActionButton+Enums.swift"; sourceTree = "<group>"; };
+		824816C123E06A43008794D3 /* ActionButton+Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ActionButton+Protocols.swift"; sourceTree = "<group>"; };
+		824816C323E06AC6008794D3 /* ActionSheetTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheetTitleView.swift; sourceTree = "<group>"; };
 		84947FE7FA76BC382FE3FBC33FDC50D2 /* ActionButtonDouble.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ActionButtonDouble.xib; path = ActionSheet/Assets/ActionButtonDouble.xib; sourceTree = "<group>"; };
 		8ECE0E8ABF06764C2CBFB7AC11BFF195 /* Pods-ActionSheet_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ActionSheet_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		926D3945B52BC18E5DB4854CB3F8FB07 /* ActionButtonDisclosure.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ActionButtonDisclosure.xib; path = ActionSheet/Assets/ActionButtonDisclosure.xib; sourceTree = "<group>"; };
@@ -205,7 +215,12 @@
 			isa = PBXGroup;
 			children = (
 				72E3A78785FA24CF3119B6AC979B836F /* ActionButton.swift */,
+				824816BF23E069B1008794D3 /* ActionButton+Enums.swift */,
+				824816C123E06A43008794D3 /* ActionButton+Protocols.swift */,
 				9B783546E74334E00F7D324FA34A2CF6 /* ActionSheet.swift */,
+				824816BB23E0694C008794D3 /* ActionSheet+Controller.swift */,
+				824816BD23E0696F008794D3 /* ActionSheet+Enums.swift */,
+				824816C323E06AC6008794D3 /* ActionSheetTitleView.swift */,
 				455633EEEA2800F223C55694D7BC5C9B /* ViewExtensions.swift */,
 				3796136386A545936A2058B11A7C8687 /* Pod */,
 				19D9CD93DCA6734ABB239BC607632BDF /* Resources */,
@@ -469,8 +484,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				0404D1B0E5B1A38E5B1AF5E91D9229B1 /* ActionButton.swift in Sources */,
+				824816C223E06A43008794D3 /* ActionButton+Protocols.swift in Sources */,
 				79AAF64454F8AD1CE44D6BE68DBF707B /* ActionSheet-dummy.m in Sources */,
 				40350004250819B34E323EC5DD7FDB19 /* ActionSheet.swift in Sources */,
+				824816C423E06AC6008794D3 /* ActionSheetTitleView.swift in Sources */,
+				824816BC23E0694C008794D3 /* ActionSheet+Controller.swift in Sources */,
+				824816C023E069B1008794D3 /* ActionButton+Enums.swift in Sources */,
+				824816BE23E0696F008794D3 /* ActionSheet+Enums.swift in Sources */,
 				97446FAEE7E6599A0F340660976F947F /* ViewExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
