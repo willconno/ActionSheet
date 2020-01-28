@@ -59,19 +59,17 @@ public class ActionSheetController: UIViewController {
         animate(isPresenting: true)
     }
     
-    func animate(isPresenting: Bool) {
+    func animate(isPresenting: Bool, _ completionHandler: @escaping (() -> Void) = {}) {
         
         let screenSize = CGSize(
             width: UIScreen.main.bounds.size.width,
             height: UIScreen.main.bounds.size.height)
         
-        let offScreenFrame = CGRect(origin: CGPoint(x: .zero, y: screenSize.height), size: screenSize)
         //Move all views off screen
         if isPresenting {
             self.containerView.frame = CGRect(origin: CGPoint(x: .zero, y: self.containerView.frame.size.height), size: self.containerView.frame.size)
             self.backgroundView.alpha = 0
         }
-        
         
         UIView.animate(
             withDuration: 0.4,
@@ -85,7 +83,12 @@ public class ActionSheetController: UIViewController {
             
             if success {
                 if !isPresenting {
+                    
+                    self.primaryButtons.forEach({$0.removeFromSuperview()})
+                    self.actionButtons.forEach({$0.removeFromSuperview()})
+                    self.heroButtons.forEach({$0.removeFromSuperview()})
                     self.dismiss(animated: false)
+                    completionHandler()
                 }
                 
             }
@@ -98,19 +101,22 @@ public class ActionSheetController: UIViewController {
     private var primaryButtons = [ActionButton]()
     private var heroButtons = [ActionButton]()
     
-    public func dismiss() {
-        animateOut()
+    public func dismiss(_ completionHandler: @escaping () -> Void) {
+        animate(isPresenting: false, completionHandler)
     }
     
     @objc func animateOut(_ sender: Any? = nil) {
-        animate(isPresenting: false)
+        builder?.dismiss()
     }
+    
+    private var builder: ActionSheet?
     
     static func createInstance(builder: ActionSheet) -> ActionSheetController? {
         guard let result = UIStoryboard(name: "ActionSheet", bundle: Bundle(identifier: "org.cocoapods.ActionSheet")).instantiateViewController(withIdentifier: "ActionSheetController") as? ActionSheetController else {
             return nil
         }
         
+        result.builder = builder
         result.titleText = builder.title
         result.subtitleText = builder.message
         result.primaryButtons = builder.primaryButtons
@@ -139,9 +145,8 @@ public enum ActionButtonLocation {
 
 public class ActionSheet {
     
-    let title: String?
-    let message: String?
-    var presenter: ActionSheetPresenter? = ActionSheetPresenter()
+    var title: String?
+    var message: String?
     
     weak private var actionSheetController: ActionSheetController?
     
@@ -175,12 +180,15 @@ public class ActionSheet {
     }
     
     public func dismiss(){
-        actionSheetController?.dismiss()
-//        actionSheetController = nil
-//        presenter = nil
-//        primaryButtons.forEach({$0.removeFromSuperview()})
-//        actionButtons.forEach({$0.removeFromSuperview()})
-//        heroButtons.forEach({$0.removeFromSuperview()})
+        actionSheetController?.dismiss() {
+            self.removeReferences()
+        }
+    }
+    
+    private func removeReferences(){
+        self.primaryButtons = []
+        self.actionButtons = []
+        self.heroButtons = []
     }
     
     deinit {

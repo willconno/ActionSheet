@@ -12,7 +12,6 @@
 		14EA66927322628BD391496DA686F7FA /* ActionButtonNormal.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D842082342D7B72D5E2F3C307F9B993 /* ActionButtonNormal.xib */; };
 		2EE194C40B6202CF09DDCEA63A966361 /* Reference.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08A814AD6A81AE79864FDED7A4728061 /* Reference.storyboard */; };
 		31534A9A349DDF67E6AF1B77DF93F6F0 /* ActionSheet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD939BB3D8E1689218ECCD9E906AEFB0 /* ActionSheet.storyboard */; };
-		3B3319276665DD22B7599C36EE3632A4 /* ActionSheetPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC898F4F18AE501398F914E976315A3F /* ActionSheetPresenter.swift */; };
 		40350004250819B34E323EC5DD7FDB19 /* ActionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B783546E74334E00F7D324FA34A2CF6 /* ActionSheet.swift */; };
 		44795AC1DA83079D13E79D486DD3D3CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		471590B2A60C58DDE240307607CEFE46 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
@@ -100,7 +99,6 @@
 		E61B4724749832965C000137CCF7FD74 /* ActionButtonImage.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ActionButtonImage.xib; path = ActionSheet/Assets/ActionButtonImage.xib; sourceTree = "<group>"; };
 		E85A6A33EF02D9E314E527384EF30CC4 /* Pods-ActionSheet_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ActionSheet_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		E88C7F0F03618415D59BF330130FC381 /* ActionSheet.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = ActionSheet.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		EC898F4F18AE501398F914E976315A3F /* ActionSheetPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ActionSheetPresenter.swift; path = ActionSheet/Classes/ActionSheetPresenter.swift; sourceTree = "<group>"; };
 		F2903855AE8C86E067C882DBBD92835C /* ActionButtonProminent.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ActionButtonProminent.xib; path = ActionSheet/Assets/ActionButtonProminent.xib; sourceTree = "<group>"; };
 		F6B338563C07FFCBC28BA712FDC24BBA /* ActionSheet-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ActionSheet-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -155,7 +153,6 @@
 				926D3945B52BC18E5DB4854CB3F8FB07 /* ActionButtonDisclosure.xib */,
 				84947FE7FA76BC382FE3FBC33FDC50D2 /* ActionButtonDouble.xib */,
 				3D778C225FDE7E804F344BE471D9B511 /* ActionButtonHeader.xib */,
-				34DB0E1BC75FD9C117EED0D63FEA5262 /* LICENSE */,
 				E61B4724749832965C000137CCF7FD74 /* ActionButtonImage.xib */,
 				3D842082342D7B72D5E2F3C307F9B993 /* ActionButtonNormal.xib */,
 				F2903855AE8C86E067C882DBBD92835C /* ActionButtonProminent.xib */,
@@ -170,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				E88C7F0F03618415D59BF330130FC381 /* ActionSheet.podspec */,
+				34DB0E1BC75FD9C117EED0D63FEA5262 /* LICENSE */,
 				9BC127DE7E2B92C587BEC30D793C7B4E /* README.md */,
 			);
 			name = Pod;
@@ -208,7 +206,6 @@
 			children = (
 				72E3A78785FA24CF3119B6AC979B836F /* ActionButton.swift */,
 				9B783546E74334E00F7D324FA34A2CF6 /* ActionSheet.swift */,
-				EC898F4F18AE501398F914E976315A3F /* ActionSheetPresenter.swift */,
 				455633EEEA2800F223C55694D7BC5C9B /* ViewExtensions.swift */,
 				3796136386A545936A2058B11A7C8687 /* Pod */,
 				19D9CD93DCA6734ABB239BC607632BDF /* Resources */,
@@ -474,7 +471,6 @@
 				0404D1B0E5B1A38E5B1AF5E91D9229B1 /* ActionButton.swift in Sources */,
 				79AAF64454F8AD1CE44D6BE68DBF707B /* ActionSheet-dummy.m in Sources */,
 				40350004250819B34E323EC5DD7FDB19 /* ActionSheet.swift in Sources */,
-				3B3319276665DD22B7599C36EE3632A4 /* ActionSheetPresenter.swift in Sources */,
 				97446FAEE7E6599A0F340660976F947F /* ViewExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
