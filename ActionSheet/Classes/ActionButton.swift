@@ -40,6 +40,9 @@ public  class ActionButton: UIView {
     @IBOutlet var titleLabel: UILabel?
     @IBOutlet var subtitleLabel: UILabel?
     
+    @IBOutlet var bottomLabel: UILabel?
+    @IBOutlet var topLabel: UILabel?
+    
     @IBOutlet weak var leftImageView: UIImageView?
     @IBOutlet weak var rightImageView: UIImageView?
     
@@ -92,6 +95,42 @@ public  class ActionButton: UIView {
             return (options?.first(where: {$0.0 == .leftPrimary})?.1 as? Bool) == true
         }
     }
+    
+    private var activeLabel: UILabel? {
+        get{
+            if style == .hero, let location = options?.first(where: {$0.0 == .textLocation})?.1 as? ActionButtonTextLocation {
+                switch location {
+                    
+                    case .top:
+                    return topLabel
+                    case .middle:
+                    return titleLabel
+                    case .bottom:
+                    return bottomLabel
+                }
+            }
+            return titleLabel
+        }
+    }
+    
+    private var attributedText: NSAttributedString? {
+        get {
+            return activeLabel?.attributedText
+        }
+        set {
+            activeLabel?.attributedText = newValue
+        }
+    }
+    
+    private var textAlignment: NSTextAlignment {
+        get {
+            return activeLabel?.textAlignment ?? .natural
+        }
+        set {
+            activeLabel?.textAlignment = newValue
+        }
+    }
+    
     private func setGestureRecognizers(){
         if style == .double {
             if isLeftPrimary {
@@ -118,7 +157,8 @@ public  class ActionButton: UIView {
     
     open func viewDidLoad() {
         
-        titleLabel?.text = title
+        activeLabel?.text = title
+        activeLabel?.isHidden = false
         
         for (key, value) in options ?? [:] {
             switch key {
@@ -129,7 +169,10 @@ public  class ActionButton: UIView {
                         subtitleLabel?.textColor = tint
                     }
                 case .imageTint:
-                    break
+                    if style == .double || style == .image, let tint = value as? UIColor {
+                        rightImageView?.tintColor = tint
+                        leftImageView?.tintColor = tint
+                    }
                 case .images:
                     if style == .hero {
                         setHeroImage((value as? [UIImage])?.first)
@@ -140,10 +183,17 @@ public  class ActionButton: UIView {
                             setRightImage(images[1])
                         }
                     }
-                case .leftPrimary:
-                    break
                 case .textAlignment:
-                 break
+                    if let alignment = value as? NSTextAlignment {
+                        self.textAlignment = alignment
+                    }
+                
+                case .attributedText:
+                    if let attributedText = value as? NSAttributedString {
+                        self.attributedText = attributedText
+                    }
+                default:
+                    break
             }
         }
     }

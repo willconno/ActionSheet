@@ -11,8 +11,8 @@ public enum ActionButtonAction {
     case primary, secondary
 }
 
-enum ActionButtonTextLocation {
-    
+public enum ActionButtonTextLocation {
+    case top, middle, bottom
 }
 
 public enum ActionButtonOption {
@@ -29,8 +29,14 @@ public enum ActionButtonOption {
     /// default is false
     case leftPrimary
     
-    /// Hero image text location. Default is `ActionButtonTextLocation.center`
+    /// Hero image text location. Default is `UITextAlignment.center`
     case textAlignment
+    
+    /// Hero image text location. Default is `ActionButtonTextLocation.center`
+    case textLocation
+    
+    /// `NSAttributedString` for Hero image text
+    case attributedText
 }
 
 public enum ActionButtonStyle: String {

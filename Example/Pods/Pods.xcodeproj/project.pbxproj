@@ -7,36 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0404D1B0E5B1A38E5B1AF5E91D9229B1 /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E3A78785FA24CF3119B6AC979B836F /* ActionButton.swift */; };
-		108D86E2E336F7153CEA68601E949A3B /* ActionButtonProminent.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2903855AE8C86E067C882DBBD92835C /* ActionButtonProminent.xib */; };
-		14EA66927322628BD391496DA686F7FA /* ActionButtonNormal.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D842082342D7B72D5E2F3C307F9B993 /* ActionButtonNormal.xib */; };
-		2EE194C40B6202CF09DDCEA63A966361 /* Reference.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08A814AD6A81AE79864FDED7A4728061 /* Reference.storyboard */; };
-		31534A9A349DDF67E6AF1B77DF93F6F0 /* ActionSheet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD939BB3D8E1689218ECCD9E906AEFB0 /* ActionSheet.storyboard */; };
-		40350004250819B34E323EC5DD7FDB19 /* ActionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B783546E74334E00F7D324FA34A2CF6 /* ActionSheet.swift */; };
+		02889E9747EE1AC840365103D4A41B89 /* ActionButtonDouble.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2CF12423A253849CD7C05E3EF02318C /* ActionButtonDouble.xib */; };
+		06BAB454D299D017C04C4D0C12CCA37E /* ActionSheetTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAC7ECC516A5F848EE0C2F1F46073B3 /* ActionSheetTitleView.swift */; };
+		3C2A20CCFB52689E50BA9A3B5CD227DC /* ActionButtonImage.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2E29FFA2F762674A358BF85169DB7AB /* ActionButtonImage.xib */; };
+		42C90933D9BB1971608266B7956F9E8C /* ActionButtonHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CE4988568D9AD1319742636C44DF22A /* ActionButtonHeader.xib */; };
 		44795AC1DA83079D13E79D486DD3D3CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		471590B2A60C58DDE240307607CEFE46 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		5EC1DB8345C48114EB15B7E533339447 /* ActionButtonHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D778C225FDE7E804F344BE471D9B511 /* ActionButtonHeader.xib */; };
+		5BE72CC6303F95670BBE36177C8BCFC3 /* ActionButton+Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB07E0AFBA82309A769ADA68C3A171AA /* ActionButton+Enums.swift */; };
+		66E0233EF2D9039EE1F9632F20AEF967 /* ActionSheet-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B8F08FC3426DE372770C4DE50BC3019B /* ActionSheet-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		67EA6646E2C198231AE40B42935F50AE /* Reference.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEC12A9ADF71B0BD12676C7C10BD1F77 /* Reference.storyboard */; };
+		692B5B164C8BC623F3EF43441B69EBF4 /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C04E80E6BE37885034708D2A3B9839 /* ActionButton.swift */; };
 		6E66D77713D662019E9A2F41B88C8ED1 /* Pods-ActionSheet_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DA553D4C10CD783B22EE79A59778E412 /* Pods-ActionSheet_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		79AAF64454F8AD1CE44D6BE68DBF707B /* ActionSheet-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E323503DE3A3B146C29F9FE88D960CE /* ActionSheet-dummy.m */; };
-		81A809715567667AD346EF1125A4C225 /* ActionButtonDouble.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84947FE7FA76BC382FE3FBC33FDC50D2 /* ActionButtonDouble.xib */; };
-		824816BC23E0694C008794D3 /* ActionSheet+Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824816BB23E0694C008794D3 /* ActionSheet+Controller.swift */; };
-		824816BE23E0696F008794D3 /* ActionSheet+Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824816BD23E0696F008794D3 /* ActionSheet+Enums.swift */; };
-		824816C023E069B1008794D3 /* ActionButton+Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824816BF23E069B1008794D3 /* ActionButton+Enums.swift */; };
-		824816C223E06A43008794D3 /* ActionButton+Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824816C123E06A43008794D3 /* ActionButton+Protocols.swift */; };
-		824816C423E06AC6008794D3 /* ActionSheetTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824816C323E06AC6008794D3 /* ActionSheetTitleView.swift */; };
-		836F9E1B719D4A4B0A7753FDAE842352 /* ActionSheet-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 42039D076F57138360990E0C1CDADC82 /* ActionSheet-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		97446FAEE7E6599A0F340660976F947F /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455633EEEA2800F223C55694D7BC5C9B /* ViewExtensions.swift */; };
+		79DCC39051DF28621B8246D3C65DC9F1 /* phone.fill.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E3BA723E0A465DF0AD3B28D242E4FB85 /* phone.fill.pdf */; };
+		8525014E21A27EC8313DA1F2258893EE /* message.fill.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 59A933553CADCB7B1AF9203EDA31F5F7 /* message.fill.pdf */; };
+		881F6B58779BF02DAB6B1BEE814C7CD0 /* ActionSheet.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 96047FA34D006EFE876DC071E9A5DA90 /* ActionSheet.bundle */; };
+		8A1FAD4DFEEB094F840D1E17BE75D452 /* ActionSheet+Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C9B0FA0854BE693B503CA139E893C5 /* ActionSheet+Enums.swift */; };
+		90C878D885B340ECB4DBBAAAEB36B153 /* ActionSheet-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EB998BDE59126F1DFD07128A353609B0 /* ActionSheet-dummy.m */; };
+		9310E91BA34025AE69C07ECDAB9BF9BE /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2D4DD12757C204C621607F2F24DE25 /* ViewExtensions.swift */; };
 		9A3AC80B30DDF0EE74F8DDEC98AB0BC0 /* Pods-ActionSheet_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D786A46D694DF41E8941DC4322CDC8A3 /* Pods-ActionSheet_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BE83E3F2C767D8FA31BE61A2A92FC389 /* ActionSheet.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 96047FA34D006EFE876DC071E9A5DA90 /* ActionSheet.bundle */; };
+		A7D848D4BEF4EF5666BEB0FC53E62957 /* ActionSheet+Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3221D24A6EE218B277EE0C996D79013E /* ActionSheet+Controller.swift */; };
+		A97370BC402455BC749509F7FBACCE81 /* ActionButton+Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53632674B9D4EBABE12786BC34A619FB /* ActionButton+Protocols.swift */; };
+		B92AF4FBEB1FBE033D33935BE4A42E3E /* ActionButtonProminent.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC567158D4AF2FDBB0BEB20527302875 /* ActionButtonProminent.xib */; };
+		BDC1588402C89BA2C9955BCF82CE48C8 /* chevron.right.pdf in Resources */ = {isa = PBXBuildFile; fileRef = BDEB2F278B3923D978FF23D44259F09D /* chevron.right.pdf */; };
 		C0F8521B9B7BA2AE2EDC99DED1F0E53F /* Pods-ActionSheet_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C60FCC4139284F21979377AF3225A05 /* Pods-ActionSheet_Tests-dummy.m */; };
-		C1F0377CDECC210B7E9F7E8AF53A2DCC /* ActionButtonDisclosure.xib in Resources */ = {isa = PBXBuildFile; fileRef = 926D3945B52BC18E5DB4854CB3F8FB07 /* ActionButtonDisclosure.xib */; };
 		CE78EA0A0662A940B5EDB1CEADF074A2 /* Pods-ActionSheet_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CF81D93A51B2FB35A8D388983DED2ED7 /* Pods-ActionSheet_Example-dummy.m */; };
-		D828597F56B3C3DD06E941AB2E74EE36 /* ActionButtonTitle.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62B9EBDEEB0CD9439F5984476E87430B /* ActionButtonTitle.xib */; };
+		D8E9F95766981207CEEBD1B6E2BBB905 /* ActionSheet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B445477189256B0BEE62078DDBE76C26 /* ActionSheet.storyboard */; };
+		D8FE071E7BC6FAF98F91123E7E2B1976 /* ActionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B522242540E8EA583706D81390CFA66A /* ActionSheet.swift */; };
+		DC53C92359A4CDB46746C4E145D112F2 /* ActionButtonNormal.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE04598FBBC78B33F576B2C51728E852 /* ActionButtonNormal.xib */; };
 		DD44145319F320BF1B0A7520BA2DC896 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		FF18DF4F0857271FBFC681E4F3711FD8 /* ActionButtonImage.xib in Resources */ = {isa = PBXBuildFile; fileRef = E61B4724749832965C000137CCF7FD74 /* ActionButtonImage.xib */; };
+		DF6962884B15ED516448C44393F54A0E /* ActionButtonDisclosure.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9359306DD3F9CD66CE343E2AEC952D55 /* ActionButtonDisclosure.xib */; };
+		E59D67CF298746F4DBC942BD20F505B5 /* house1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD24C1FA6CBB08AAB5252353317B36BC /* house1.jpg */; };
+		F52780E3E1F74D8AFF73D1C3050B8836 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		FC629FCA5DEA56D662822B36D716288A /* ActionButtonTitle.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9E1CBE53EEAA5841EB396E40E11B894 /* ActionButtonTitle.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		23E8CB56B3C8F89FCDD702D93E1DD8B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADF30707761B4EEC1FD605B5682BB682;
+			remoteInfo = "ActionSheet-ActionSheet";
+		};
 		80414EEA6B3D35F7D966B0C0735F69EB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -51,66 +62,63 @@
 			remoteGlobalIDString = C04B4EEE8F207735257DDE9CEECD32B6;
 			remoteInfo = ActionSheet;
 		};
-		DD1001460B9547A22C56A31C286DCE9E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = ADF30707761B4EEC1FD605B5682BB682;
-			remoteInfo = "ActionSheet-ActionSheet";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		08A814AD6A81AE79864FDED7A4728061 /* Reference.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = Reference.storyboard; path = ActionSheet/Assets/Reference.storyboard; sourceTree = "<group>"; };
+		0201BC27F38EB9249C579E3A548A07DF /* ActionSheet-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ActionSheet-Info.plist"; sourceTree = "<group>"; };
+		070020C7B75C01025E7A1855C9ABB41D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		075BB55DC6781AB8E43F48B51C71095D /* ResourceBundle-ActionSheet-ActionSheet-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-ActionSheet-ActionSheet-Info.plist"; sourceTree = "<group>"; };
+		077A58D3EA89E80CB3CB72EC9BB58524 /* ActionSheet-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ActionSheet-prefix.pch"; sourceTree = "<group>"; };
 		09BF62FB9005701245515CCD4634DF50 /* Pods-ActionSheet_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ActionSheet_Example.release.xcconfig"; sourceTree = "<group>"; };
 		0C8683C17F4E7A313E3CD516C706EA8B /* Pods-ActionSheet_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ActionSheet_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		1136C80B3096D640A2F44CE88B6EF598 /* ActionSheet.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ActionSheet.modulemap; sourceTree = "<group>"; };
 		1C60FCC4139284F21979377AF3225A05 /* Pods-ActionSheet_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ActionSheet_Tests-dummy.m"; sourceTree = "<group>"; };
 		2033DB000C920AB569F996476044D3FC /* Pods-ActionSheet_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ActionSheet_Example-frameworks.sh"; sourceTree = "<group>"; };
+		20C9B0FA0854BE693B503CA139E893C5 /* ActionSheet+Enums.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ActionSheet+Enums.swift"; path = "ActionSheet/Classes/ActionSheet+Enums.swift"; sourceTree = "<group>"; };
 		269F22CF9970B0191306D60ECF24822F /* Pods-ActionSheet_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ActionSheet_Tests-Info.plist"; sourceTree = "<group>"; };
+		2AAC7ECC516A5F848EE0C2F1F46073B3 /* ActionSheetTitleView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ActionSheetTitleView.swift; path = ActionSheet/Classes/ActionSheetTitleView.swift; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		34DB0E1BC75FD9C117EED0D63FEA5262 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		3D778C225FDE7E804F344BE471D9B511 /* ActionButtonHeader.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ActionButtonHeader.xib; path = ActionSheet/Assets/ActionButtonHeader.xib; sourceTree = "<group>"; };
-		3D842082342D7B72D5E2F3C307F9B993 /* ActionButtonNormal.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ActionButtonNormal.xib; path = ActionSheet/Assets/ActionButtonNormal.xib; sourceTree = "<group>"; };
-		42039D076F57138360990E0C1CDADC82 /* ActionSheet-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ActionSheet-umbrella.h"; sourceTree = "<group>"; };
-		44FB1E9A31234333DAAD49F6E8D45ECD /* ResourceBundle-ActionSheet-ActionSheet-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-ActionSheet-ActionSheet-Info.plist"; sourceTree = "<group>"; };
-		455633EEEA2800F223C55694D7BC5C9B /* ViewExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViewExtensions.swift; path = ActionSheet/Classes/ViewExtensions.swift; sourceTree = "<group>"; };
+		3221D24A6EE218B277EE0C996D79013E /* ActionSheet+Controller.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ActionSheet+Controller.swift"; path = "ActionSheet/Classes/ActionSheet+Controller.swift"; sourceTree = "<group>"; };
 		4D6D8756DC81942408B44F62B02ECBD0 /* Pods-ActionSheet_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ActionSheet_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		4E323503DE3A3B146C29F9FE88D960CE /* ActionSheet-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ActionSheet-dummy.m"; sourceTree = "<group>"; };
-		62B9EBDEEB0CD9439F5984476E87430B /* ActionButtonTitle.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ActionButtonTitle.xib; path = ActionSheet/Assets/ActionButtonTitle.xib; sourceTree = "<group>"; };
+		53632674B9D4EBABE12786BC34A619FB /* ActionButton+Protocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ActionButton+Protocols.swift"; path = "ActionSheet/Classes/ActionButton+Protocols.swift"; sourceTree = "<group>"; };
+		59A933553CADCB7B1AF9203EDA31F5F7 /* message.fill.pdf */ = {isa = PBXFileReference; includeInIndex = 1; name = message.fill.pdf; path = ActionSheet/Assets/message.fill.pdf; sourceTree = "<group>"; };
+		5CABC17F744291C644E8716A9E42870E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		5CE4988568D9AD1319742636C44DF22A /* ActionButtonHeader.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ActionButtonHeader.xib; path = ActionSheet/Assets/ActionButtonHeader.xib; sourceTree = "<group>"; };
 		6B48BAF3266DEF8E3324AA32C9294A9A /* Pods-ActionSheet_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ActionSheet_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		7019220C9675CE150EBFE333B4066883 /* Pods_ActionSheet_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ActionSheet_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		72E3A78785FA24CF3119B6AC979B836F /* ActionButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ActionButton.swift; path = ActionSheet/Classes/ActionButton.swift; sourceTree = "<group>"; };
-		748E1386F1E20F32A2014371E4AC4BF2 /* ActionSheet-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ActionSheet-prefix.pch"; sourceTree = "<group>"; };
+		7019220C9675CE150EBFE333B4066883 /* Pods_ActionSheet_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ActionSheet_Tests.framework; path = "Pods-ActionSheet_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DEE6311F09269E8A04478E3C5D0FC6D /* Pods-ActionSheet_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ActionSheet_Example-Info.plist"; sourceTree = "<group>"; };
-		824816BB23E0694C008794D3 /* ActionSheet+Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ActionSheet+Controller.swift"; sourceTree = "<group>"; };
-		824816BD23E0696F008794D3 /* ActionSheet+Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ActionSheet+Enums.swift"; sourceTree = "<group>"; };
-		824816BF23E069B1008794D3 /* ActionButton+Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ActionButton+Enums.swift"; sourceTree = "<group>"; };
-		824816C123E06A43008794D3 /* ActionButton+Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ActionButton+Protocols.swift"; sourceTree = "<group>"; };
-		824816C323E06AC6008794D3 /* ActionSheetTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheetTitleView.swift; sourceTree = "<group>"; };
-		84947FE7FA76BC382FE3FBC33FDC50D2 /* ActionButtonDouble.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ActionButtonDouble.xib; path = ActionSheet/Assets/ActionButtonDouble.xib; sourceTree = "<group>"; };
+		8E2D4DD12757C204C621607F2F24DE25 /* ViewExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViewExtensions.swift; path = ActionSheet/Classes/ViewExtensions.swift; sourceTree = "<group>"; };
 		8ECE0E8ABF06764C2CBFB7AC11BFF195 /* Pods-ActionSheet_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ActionSheet_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		926D3945B52BC18E5DB4854CB3F8FB07 /* ActionButtonDisclosure.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ActionButtonDisclosure.xib; path = ActionSheet/Assets/ActionButtonDisclosure.xib; sourceTree = "<group>"; };
-		96047FA34D006EFE876DC071E9A5DA90 /* ActionSheet.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ActionSheet.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		964076ABBBC139C55EDFF707982EE7EE /* ActionSheet.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ActionSheet.xcconfig; sourceTree = "<group>"; };
+		9359306DD3F9CD66CE343E2AEC952D55 /* ActionButtonDisclosure.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ActionButtonDisclosure.xib; path = ActionSheet/Assets/ActionButtonDisclosure.xib; sourceTree = "<group>"; };
+		96047FA34D006EFE876DC071E9A5DA90 /* ActionSheet.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ActionSheet.bundle; path = "ActionSheet-ActionSheet.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9ACBDB6BFAD3400789E32754782FF626 /* Pods-ActionSheet_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ActionSheet_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		9B783546E74334E00F7D324FA34A2CF6 /* ActionSheet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ActionSheet.swift; path = ActionSheet/Classes/ActionSheet.swift; sourceTree = "<group>"; };
-		9BC127DE7E2B92C587BEC30D793C7B4E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A040F2D4F9174EF568E9344525CAB095 /* ActionSheet.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ActionSheet.modulemap; sourceTree = "<group>"; };
+		A2E29FFA2F762674A358BF85169DB7AB /* ActionButtonImage.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ActionButtonImage.xib; path = ActionSheet/Assets/ActionButtonImage.xib; sourceTree = "<group>"; };
+		A9E1CBE53EEAA5841EB396E40E11B894 /* ActionButtonTitle.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ActionButtonTitle.xib; path = ActionSheet/Assets/ActionButtonTitle.xib; sourceTree = "<group>"; };
+		AD24C1FA6CBB08AAB5252353317B36BC /* house1.jpg */ = {isa = PBXFileReference; includeInIndex = 1; name = house1.jpg; path = ActionSheet/Assets/house1.jpg; sourceTree = "<group>"; };
+		B445477189256B0BEE62078DDBE76C26 /* ActionSheet.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = ActionSheet.storyboard; path = ActionSheet/Assets/ActionSheet.storyboard; sourceTree = "<group>"; };
+		B522242540E8EA583706D81390CFA66A /* ActionSheet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ActionSheet.swift; path = ActionSheet/Classes/ActionSheet.swift; sourceTree = "<group>"; };
+		B6BEE791D4E70959C07F2C53903BA498 /* ActionSheet.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ActionSheet.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B892FC4D2EF3B008B80B372669E11721 /* Pods-ActionSheet_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ActionSheet_Tests.modulemap"; sourceTree = "<group>"; };
+		B8F08FC3426DE372770C4DE50BC3019B /* ActionSheet-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ActionSheet-umbrella.h"; sourceTree = "<group>"; };
+		BDEB2F278B3923D978FF23D44259F09D /* chevron.right.pdf */ = {isa = PBXFileReference; includeInIndex = 1; name = chevron.right.pdf; path = ActionSheet/Assets/chevron.right.pdf; sourceTree = "<group>"; };
 		C0DB644EFF286FC0ED9B7EB6DD725409 /* Pods-ActionSheet_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ActionSheet_Example.modulemap"; sourceTree = "<group>"; };
+		CEC12A9ADF71B0BD12676C7C10BD1F77 /* Reference.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = Reference.storyboard; path = ActionSheet/Assets/Reference.storyboard; sourceTree = "<group>"; };
 		CF81D93A51B2FB35A8D388983DED2ED7 /* Pods-ActionSheet_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ActionSheet_Example-dummy.m"; sourceTree = "<group>"; };
-		D03F64E7B55FB9B1BF1932E62868B583 /* ActionSheet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ActionSheet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D03F64E7B55FB9B1BF1932E62868B583 /* ActionSheet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ActionSheet.framework; path = ActionSheet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2CF12423A253849CD7C05E3EF02318C /* ActionButtonDouble.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ActionButtonDouble.xib; path = ActionSheet/Assets/ActionButtonDouble.xib; sourceTree = "<group>"; };
 		D4F37D0D9F3E73F468D16FCA8F8F267B /* Pods-ActionSheet_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ActionSheet_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		D786A46D694DF41E8941DC4322CDC8A3 /* Pods-ActionSheet_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ActionSheet_Example-umbrella.h"; sourceTree = "<group>"; };
+		D8F52B771E57F5709CF3D6032EDD7814 /* ActionSheet.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ActionSheet.xcconfig; sourceTree = "<group>"; };
 		DA553D4C10CD783B22EE79A59778E412 /* Pods-ActionSheet_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ActionSheet_Tests-umbrella.h"; sourceTree = "<group>"; };
-		DD939BB3D8E1689218ECCD9E906AEFB0 /* ActionSheet.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = ActionSheet.storyboard; path = ActionSheet/Assets/ActionSheet.storyboard; sourceTree = "<group>"; };
-		E02A3ED5BD1BB52F998F56A4552D4096 /* Pods_ActionSheet_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ActionSheet_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E61B4724749832965C000137CCF7FD74 /* ActionButtonImage.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ActionButtonImage.xib; path = ActionSheet/Assets/ActionButtonImage.xib; sourceTree = "<group>"; };
+		DB07E0AFBA82309A769ADA68C3A171AA /* ActionButton+Enums.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ActionButton+Enums.swift"; path = "ActionSheet/Classes/ActionButton+Enums.swift"; sourceTree = "<group>"; };
+		DE04598FBBC78B33F576B2C51728E852 /* ActionButtonNormal.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ActionButtonNormal.xib; path = ActionSheet/Assets/ActionButtonNormal.xib; sourceTree = "<group>"; };
+		E02A3ED5BD1BB52F998F56A4552D4096 /* Pods_ActionSheet_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ActionSheet_Example.framework; path = "Pods-ActionSheet_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2C04E80E6BE37885034708D2A3B9839 /* ActionButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ActionButton.swift; path = ActionSheet/Classes/ActionButton.swift; sourceTree = "<group>"; };
+		E3BA723E0A465DF0AD3B28D242E4FB85 /* phone.fill.pdf */ = {isa = PBXFileReference; includeInIndex = 1; name = phone.fill.pdf; path = ActionSheet/Assets/phone.fill.pdf; sourceTree = "<group>"; };
 		E85A6A33EF02D9E314E527384EF30CC4 /* Pods-ActionSheet_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ActionSheet_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		E88C7F0F03618415D59BF330130FC381 /* ActionSheet.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = ActionSheet.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		F2903855AE8C86E067C882DBBD92835C /* ActionButtonProminent.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ActionButtonProminent.xib; path = ActionSheet/Assets/ActionButtonProminent.xib; sourceTree = "<group>"; };
-		F6B338563C07FFCBC28BA712FDC24BBA /* ActionSheet-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ActionSheet-Info.plist"; sourceTree = "<group>"; };
+		EB998BDE59126F1DFD07128A353609B0 /* ActionSheet-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ActionSheet-dummy.m"; sourceTree = "<group>"; };
+		EC567158D4AF2FDBB0BEB20527302875 /* ActionButtonProminent.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ActionButtonProminent.xib; path = ActionSheet/Assets/ActionButtonProminent.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,11 +130,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		60B01FE82D27A7B28ADF363F10966631 /* Frameworks */ = {
+		2D9079FFCE75F739C775147BF58F64A2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				471590B2A60C58DDE240307607CEFE46 /* Foundation.framework in Frameworks */,
+				F52780E3E1F74D8AFF73D1C3050B8836 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B23D10585B8B65F472AADA160D9CC357 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,13 +150,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				44795AC1DA83079D13E79D486DD3D3CD /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E313564FE015870C063FD2A1C77E8555 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,30 +165,58 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		19D9CD93DCA6734ABB239BC607632BDF /* Resources */ = {
+		10D7FC4B2CD690BFFD795BBE3ED6AD86 /* ActionSheet */ = {
 			isa = PBXGroup;
 			children = (
-				926D3945B52BC18E5DB4854CB3F8FB07 /* ActionButtonDisclosure.xib */,
-				84947FE7FA76BC382FE3FBC33FDC50D2 /* ActionButtonDouble.xib */,
-				3D778C225FDE7E804F344BE471D9B511 /* ActionButtonHeader.xib */,
-				E61B4724749832965C000137CCF7FD74 /* ActionButtonImage.xib */,
-				3D842082342D7B72D5E2F3C307F9B993 /* ActionButtonNormal.xib */,
-				F2903855AE8C86E067C882DBBD92835C /* ActionButtonProminent.xib */,
-				62B9EBDEEB0CD9439F5984476E87430B /* ActionButtonTitle.xib */,
-				DD939BB3D8E1689218ECCD9E906AEFB0 /* ActionSheet.storyboard */,
-				08A814AD6A81AE79864FDED7A4728061 /* Reference.storyboard */,
+				E2C04E80E6BE37885034708D2A3B9839 /* ActionButton.swift */,
+				DB07E0AFBA82309A769ADA68C3A171AA /* ActionButton+Enums.swift */,
+				53632674B9D4EBABE12786BC34A619FB /* ActionButton+Protocols.swift */,
+				B522242540E8EA583706D81390CFA66A /* ActionSheet.swift */,
+				3221D24A6EE218B277EE0C996D79013E /* ActionSheet+Controller.swift */,
+				20C9B0FA0854BE693B503CA139E893C5 /* ActionSheet+Enums.swift */,
+				2AAC7ECC516A5F848EE0C2F1F46073B3 /* ActionSheetTitleView.swift */,
+				8E2D4DD12757C204C621607F2F24DE25 /* ViewExtensions.swift */,
+				B3A26612D548ACCDE56B17840C74AB41 /* Pod */,
+				49B6B937F89325A6CBC8745C687DA5ED /* Resources */,
+				637FA222169B4C1D1D8DEC9D4AA0AE7F /* Support Files */,
+			);
+			name = ActionSheet;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		49B6B937F89325A6CBC8745C687DA5ED /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9359306DD3F9CD66CE343E2AEC952D55 /* ActionButtonDisclosure.xib */,
+				D2CF12423A253849CD7C05E3EF02318C /* ActionButtonDouble.xib */,
+				5CE4988568D9AD1319742636C44DF22A /* ActionButtonHeader.xib */,
+				A2E29FFA2F762674A358BF85169DB7AB /* ActionButtonImage.xib */,
+				DE04598FBBC78B33F576B2C51728E852 /* ActionButtonNormal.xib */,
+				EC567158D4AF2FDBB0BEB20527302875 /* ActionButtonProminent.xib */,
+				A9E1CBE53EEAA5841EB396E40E11B894 /* ActionButtonTitle.xib */,
+				B445477189256B0BEE62078DDBE76C26 /* ActionSheet.storyboard */,
+				BDEB2F278B3923D978FF23D44259F09D /* chevron.right.pdf */,
+				AD24C1FA6CBB08AAB5252353317B36BC /* house1.jpg */,
+				59A933553CADCB7B1AF9203EDA31F5F7 /* message.fill.pdf */,
+				E3BA723E0A465DF0AD3B28D242E4FB85 /* phone.fill.pdf */,
+				CEC12A9ADF71B0BD12676C7C10BD1F77 /* Reference.storyboard */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		3796136386A545936A2058B11A7C8687 /* Pod */ = {
+		637FA222169B4C1D1D8DEC9D4AA0AE7F /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				E88C7F0F03618415D59BF330130FC381 /* ActionSheet.podspec */,
-				34DB0E1BC75FD9C117EED0D63FEA5262 /* LICENSE */,
-				9BC127DE7E2B92C587BEC30D793C7B4E /* README.md */,
+				A040F2D4F9174EF568E9344525CAB095 /* ActionSheet.modulemap */,
+				D8F52B771E57F5709CF3D6032EDD7814 /* ActionSheet.xcconfig */,
+				EB998BDE59126F1DFD07128A353609B0 /* ActionSheet-dummy.m */,
+				0201BC27F38EB9249C579E3A548A07DF /* ActionSheet-Info.plist */,
+				077A58D3EA89E80CB3CB72EC9BB58524 /* ActionSheet-prefix.pch */,
+				B8F08FC3426DE372770C4DE50BC3019B /* ActionSheet-umbrella.h */,
+				075BB55DC6781AB8E43F48B51C71095D /* ResourceBundle-ActionSheet-ActionSheet-Info.plist */,
 			);
-			name = Pod;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/ActionSheet";
 			sourceTree = "<group>";
 		};
 		7736656DBA5D7EA64C00DAF9F663F6F8 /* Pods-ActionSheet_Example */ = {
@@ -211,23 +247,22 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		907DF291CC565334E16ABBB5C1035934 /* ActionSheet */ = {
+		8DE7A66C8943EEBA616C89FAD5D722C9 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				72E3A78785FA24CF3119B6AC979B836F /* ActionButton.swift */,
-				824816BF23E069B1008794D3 /* ActionButton+Enums.swift */,
-				824816C123E06A43008794D3 /* ActionButton+Protocols.swift */,
-				9B783546E74334E00F7D324FA34A2CF6 /* ActionSheet.swift */,
-				824816BB23E0694C008794D3 /* ActionSheet+Controller.swift */,
-				824816BD23E0696F008794D3 /* ActionSheet+Enums.swift */,
-				824816C323E06AC6008794D3 /* ActionSheetTitleView.swift */,
-				455633EEEA2800F223C55694D7BC5C9B /* ViewExtensions.swift */,
-				3796136386A545936A2058B11A7C8687 /* Pod */,
-				19D9CD93DCA6734ABB239BC607632BDF /* Resources */,
-				D94CBA1A30AB9807D51CD2398B7E5572 /* Support Files */,
+				10D7FC4B2CD690BFFD795BBE3ED6AD86 /* ActionSheet */,
 			);
-			name = ActionSheet;
-			path = ../..;
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		B3A26612D548ACCDE56B17840C74AB41 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				B6BEE791D4E70959C07F2C53903BA498 /* ActionSheet.podspec */,
+				070020C7B75C01025E7A1855C9ABB41D /* LICENSE */,
+				5CABC17F744291C644E8716A9E42870E /* README.md */,
+			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
@@ -242,7 +277,7 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				F2FC9E3768FBD33A0F89B6386802DBC6 /* Development Pods */,
+				8DE7A66C8943EEBA616C89FAD5D722C9 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				7A35F15F5A5007A2F94A5B65AF3C4A12 /* Products */,
 				0CE598A0A2B0D7B98B85924B1A99CE72 /* Targets Support Files */,
@@ -255,21 +290,6 @@
 				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		D94CBA1A30AB9807D51CD2398B7E5572 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				1136C80B3096D640A2F44CE88B6EF598 /* ActionSheet.modulemap */,
-				964076ABBBC139C55EDFF707982EE7EE /* ActionSheet.xcconfig */,
-				4E323503DE3A3B146C29F9FE88D960CE /* ActionSheet-dummy.m */,
-				F6B338563C07FFCBC28BA712FDC24BBA /* ActionSheet-Info.plist */,
-				748E1386F1E20F32A2014371E4AC4BF2 /* ActionSheet-prefix.pch */,
-				42039D076F57138360990E0C1CDADC82 /* ActionSheet-umbrella.h */,
-				44FB1E9A31234333DAAD49F6E8D45ECD /* ResourceBundle-ActionSheet-ActionSheet-Info.plist */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/ActionSheet";
 			sourceTree = "<group>";
 		};
 		EAD76971BD561EC7F25512C35E80663F /* Pods-ActionSheet_Tests */ = {
@@ -288,17 +308,17 @@
 			path = "Target Support Files/Pods-ActionSheet_Tests";
 			sourceTree = "<group>";
 		};
-		F2FC9E3768FBD33A0F89B6386802DBC6 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				907DF291CC565334E16ABBB5C1035934 /* ActionSheet */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		558E842783054C8E7D3DDC044CF55E3A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66E0233EF2D9039EE1F9632F20AEF967 /* ActionSheet-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9CC7A8BE5462F90E16C236ECC59F9F18 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -312,14 +332,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E66D77713D662019E9A2F41B88C8ED1 /* Pods-ActionSheet_Tests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FE71A0AF67F427C299570C78780337AF /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				836F9E1B719D4A4B0A7753FDAE842352 /* ActionSheet-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,11 +378,11 @@
 		};
 		ADF30707761B4EEC1FD605B5682BB682 /* ActionSheet-ActionSheet */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 52D35B064028ED529D0566ED481C7FD8 /* Build configuration list for PBXNativeTarget "ActionSheet-ActionSheet" */;
+			buildConfigurationList = D65AE0124B5F5F9A17FF26DF4A09E211 /* Build configuration list for PBXNativeTarget "ActionSheet-ActionSheet" */;
 			buildPhases = (
-				42826F0A6D3E8D56CB0295634AFBFA65 /* Sources */,
-				E313564FE015870C063FD2A1C77E8555 /* Frameworks */,
-				1FD8D4B8D0BCBA4103A980527BF7AC7D /* Resources */,
+				78FB0AB2E0A7D890308CBA3581C5F525 /* Sources */,
+				B23D10585B8B65F472AADA160D9CC357 /* Frameworks */,
+				01978103ED056B1BA7BB5684C50BE287 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -383,17 +395,17 @@
 		};
 		C04B4EEE8F207735257DDE9CEECD32B6 /* ActionSheet */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B52ABA83DC9160E7415FC9517985E9AC /* Build configuration list for PBXNativeTarget "ActionSheet" */;
+			buildConfigurationList = 9C5529F1952EA335BA4517A695A6C468 /* Build configuration list for PBXNativeTarget "ActionSheet" */;
 			buildPhases = (
-				FE71A0AF67F427C299570C78780337AF /* Headers */,
-				4D6D4393D0332488D5FE744896ED113A /* Sources */,
-				60B01FE82D27A7B28ADF363F10966631 /* Frameworks */,
-				D64C457D806921A6E1849EBDD1C1864F /* Resources */,
+				558E842783054C8E7D3DDC044CF55E3A /* Headers */,
+				D83541D38D1700A0DC08A2DB307E4FDB /* Sources */,
+				2D9079FFCE75F739C775147BF58F64A2 /* Frameworks */,
+				32C4F16F2C3ECCF2FA189B5BA8F75320 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				3F1169A6784F88B988F78C261B9BA68D /* PBXTargetDependency */,
+				F78F5E6CC64414713BD196DCB580EC74 /* PBXTargetDependency */,
 			);
 			name = ActionSheet;
 			productName = ActionSheet;
@@ -431,27 +443,31 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1FD8D4B8D0BCBA4103A980527BF7AC7D /* Resources */ = {
+		01978103ED056B1BA7BB5684C50BE287 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1F0377CDECC210B7E9F7E8AF53A2DCC /* ActionButtonDisclosure.xib in Resources */,
-				81A809715567667AD346EF1125A4C225 /* ActionButtonDouble.xib in Resources */,
-				5EC1DB8345C48114EB15B7E533339447 /* ActionButtonHeader.xib in Resources */,
-				FF18DF4F0857271FBFC681E4F3711FD8 /* ActionButtonImage.xib in Resources */,
-				14EA66927322628BD391496DA686F7FA /* ActionButtonNormal.xib in Resources */,
-				108D86E2E336F7153CEA68601E949A3B /* ActionButtonProminent.xib in Resources */,
-				D828597F56B3C3DD06E941AB2E74EE36 /* ActionButtonTitle.xib in Resources */,
-				31534A9A349DDF67E6AF1B77DF93F6F0 /* ActionSheet.storyboard in Resources */,
-				2EE194C40B6202CF09DDCEA63A966361 /* Reference.storyboard in Resources */,
+				DF6962884B15ED516448C44393F54A0E /* ActionButtonDisclosure.xib in Resources */,
+				02889E9747EE1AC840365103D4A41B89 /* ActionButtonDouble.xib in Resources */,
+				42C90933D9BB1971608266B7956F9E8C /* ActionButtonHeader.xib in Resources */,
+				3C2A20CCFB52689E50BA9A3B5CD227DC /* ActionButtonImage.xib in Resources */,
+				DC53C92359A4CDB46746C4E145D112F2 /* ActionButtonNormal.xib in Resources */,
+				B92AF4FBEB1FBE033D33935BE4A42E3E /* ActionButtonProminent.xib in Resources */,
+				FC629FCA5DEA56D662822B36D716288A /* ActionButtonTitle.xib in Resources */,
+				D8E9F95766981207CEEBD1B6E2BBB905 /* ActionSheet.storyboard in Resources */,
+				BDC1588402C89BA2C9955BCF82CE48C8 /* chevron.right.pdf in Resources */,
+				E59D67CF298746F4DBC942BD20F505B5 /* house1.jpg in Resources */,
+				8525014E21A27EC8313DA1F2258893EE /* message.fill.pdf in Resources */,
+				79DCC39051DF28621B8246D3C65DC9F1 /* phone.fill.pdf in Resources */,
+				67EA6646E2C198231AE40B42935F50AE /* Reference.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D64C457D806921A6E1849EBDD1C1864F /* Resources */ = {
+		32C4F16F2C3ECCF2FA189B5BA8F75320 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE83E3F2C767D8FA31BE61A2A92FC389 /* ActionSheet.bundle in Resources */,
+				881F6B58779BF02DAB6B1BEE814C7CD0 /* ActionSheet.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,26 +488,10 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		42826F0A6D3E8D56CB0295634AFBFA65 /* Sources */ = {
+		78FB0AB2E0A7D890308CBA3581C5F525 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4D6D4393D0332488D5FE744896ED113A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0404D1B0E5B1A38E5B1AF5E91D9229B1 /* ActionButton.swift in Sources */,
-				824816C223E06A43008794D3 /* ActionButton+Protocols.swift in Sources */,
-				79AAF64454F8AD1CE44D6BE68DBF707B /* ActionSheet-dummy.m in Sources */,
-				40350004250819B34E323EC5DD7FDB19 /* ActionSheet.swift in Sources */,
-				824816C423E06AC6008794D3 /* ActionSheetTitleView.swift in Sources */,
-				824816BC23E0694C008794D3 /* ActionSheet+Controller.swift in Sources */,
-				824816C023E069B1008794D3 /* ActionButton+Enums.swift in Sources */,
-				824816BE23E0696F008794D3 /* ActionSheet+Enums.swift in Sources */,
-				97446FAEE7E6599A0F340660976F947F /* ViewExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,6 +511,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D83541D38D1700A0DC08A2DB307E4FDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BE72CC6303F95670BBE36177C8BCFC3 /* ActionButton+Enums.swift in Sources */,
+				A97370BC402455BC749509F7FBACCE81 /* ActionButton+Protocols.swift in Sources */,
+				692B5B164C8BC623F3EF43441B69EBF4 /* ActionButton.swift in Sources */,
+				A7D848D4BEF4EF5666BEB0FC53E62957 /* ActionSheet+Controller.swift in Sources */,
+				8A1FAD4DFEEB094F840D1E17BE75D452 /* ActionSheet+Enums.swift in Sources */,
+				90C878D885B340ECB4DBBAAAEB36B153 /* ActionSheet-dummy.m in Sources */,
+				D8FE071E7BC6FAF98F91123E7E2B1976 /* ActionSheet.swift in Sources */,
+				06BAB454D299D017C04C4D0C12CCA37E /* ActionSheetTitleView.swift in Sources */,
+				9310E91BA34025AE69C07ECDAB9BF9BE /* ViewExtensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -520,24 +536,24 @@
 			target = 00B04EE1C2E0B6A0BA9EAA129740F970 /* Pods-ActionSheet_Example */;
 			targetProxy = 80414EEA6B3D35F7D966B0C0735F69EB /* PBXContainerItemProxy */;
 		};
-		3F1169A6784F88B988F78C261B9BA68D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "ActionSheet-ActionSheet";
-			target = ADF30707761B4EEC1FD605B5682BB682 /* ActionSheet-ActionSheet */;
-			targetProxy = DD1001460B9547A22C56A31C286DCE9E /* PBXContainerItemProxy */;
-		};
 		9810423AB4740CCC31FC786C9D2A8C59 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ActionSheet;
 			target = C04B4EEE8F207735257DDE9CEECD32B6 /* ActionSheet */;
 			targetProxy = 87C6B63E97E3DDE673433EBCD36FE2DE /* PBXContainerItemProxy */;
 		};
+		F78F5E6CC64414713BD196DCB580EC74 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ActionSheet-ActionSheet";
+			target = ADF30707761B4EEC1FD605B5682BB682 /* ActionSheet-ActionSheet */;
+			targetProxy = 23E8CB56B3C8F89FCDD702D93E1DD8B6 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		2EE176C9EF04680B1BF60C73AF856517 /* Debug */ = {
+		2384D0FBFE658105D238C7C3AA94F4CC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 964076ABBBC139C55EDFF707982EE7EE /* ActionSheet.xcconfig */;
+			baseConfigurationReference = D8F52B771E57F5709CF3D6032EDD7814 /* ActionSheet.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -600,9 +616,9 @@
 			};
 			name = Release;
 		};
-		6C8685FBF2987DE47CD11496908DA3B8 /* Release */ = {
+		81B3FF5C0EE6DFD11202445A45DF068B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 964076ABBBC139C55EDFF707982EE7EE /* ActionSheet.xcconfig */;
+			baseConfigurationReference = D8F52B771E57F5709CF3D6032EDD7814 /* ActionSheet.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ActionSheet";
@@ -615,7 +631,7 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = bundle;
 			};
-			name = Release;
+			name = Debug;
 		};
 		94F091FD6D8066925D7F684B7D3981D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -703,7 +719,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -773,6 +790,55 @@
 			};
 			name = Debug;
 		};
+		C48623CAADEF28351A9D5F9C95F6FF9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8F52B771E57F5709CF3D6032EDD7814 /* ActionSheet.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ActionSheet/ActionSheet-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ActionSheet/ActionSheet-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ActionSheet/ActionSheet.modulemap";
+				PRODUCT_MODULE_NAME = ActionSheet;
+				PRODUCT_NAME = ActionSheet;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D4290DA12A1D0A110DE7AAE1D9E92B50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8F52B771E57F5709CF3D6032EDD7814 /* ActionSheet.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ActionSheet";
+				IBSC_MODULE = ActionSheet;
+				INFOPLIST_FILE = "Target Support Files/ActionSheet/ResourceBundle-ActionSheet-ActionSheet-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = ActionSheet;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 		E291FD49BC121B3EB8407C23614A29DE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E85A6A33EF02D9E314E527384EF30CC4 /* Pods-ActionSheet_Tests.debug.xcconfig */;
@@ -803,23 +869,6 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		E554004E33CAE63E84DD1433BF318F52 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 964076ABBBC139C55EDFF707982EE7EE /* ActionSheet.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ActionSheet";
-				IBSC_MODULE = ActionSheet;
-				INFOPLIST_FILE = "Target Support Files/ActionSheet/ResourceBundle-ActionSheet-ActionSheet-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				PRODUCT_NAME = ActionSheet;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
 		};
@@ -857,38 +906,6 @@
 			};
 			name = Release;
 		};
-		F12B5C6AFB9E481E0A23A3473049BB4B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 964076ABBBC139C55EDFF707982EE7EE /* ActionSheet.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ActionSheet/ActionSheet-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ActionSheet/ActionSheet-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ActionSheet/ActionSheet.modulemap";
-				PRODUCT_MODULE_NAME = ActionSheet;
-				PRODUCT_NAME = ActionSheet;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -901,20 +918,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		52D35B064028ED529D0566ED481C7FD8 /* Build configuration list for PBXNativeTarget "ActionSheet-ActionSheet" */ = {
+		9C5529F1952EA335BA4517A695A6C468 /* Build configuration list for PBXNativeTarget "ActionSheet" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E554004E33CAE63E84DD1433BF318F52 /* Debug */,
-				6C8685FBF2987DE47CD11496908DA3B8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B52ABA83DC9160E7415FC9517985E9AC /* Build configuration list for PBXNativeTarget "ActionSheet" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2EE176C9EF04680B1BF60C73AF856517 /* Debug */,
-				F12B5C6AFB9E481E0A23A3473049BB4B /* Release */,
+				2384D0FBFE658105D238C7C3AA94F4CC /* Debug */,
+				C48623CAADEF28351A9D5F9C95F6FF9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -933,6 +941,15 @@
 			buildConfigurations = (
 				E291FD49BC121B3EB8407C23614A29DE /* Debug */,
 				F06CAF712D17E2BCFD3B2854B8114DA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D65AE0124B5F5F9A17FF26DF4A09E211 /* Build configuration list for PBXNativeTarget "ActionSheet-ActionSheet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81B3FF5C0EE6DFD11202445A45DF068B /* Debug */,
+				D4290DA12A1D0A110DE7AAE1D9E92B50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

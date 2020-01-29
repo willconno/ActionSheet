@@ -29,8 +29,12 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tps-RT-id8">
                             <rect key="frame" x="0.0" y="0.0" width="48" height="57"/>
                             <subviews>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="call" translatesAutoresizingMaskIntoConstraints="NO" id="WdV-Zb-WWV">
-                                    <rect key="frame" x="16" y="4.5" width="48" height="48"/>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="phone.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="WdV-Zb-WWV">
+                                    <rect key="frame" x="13" y="19" width="22" height="19.5"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="22" id="dKe-l5-Gym"/>
+                                        <constraint firstAttribute="width" constant="22" id="pIS-ld-nD8"/>
+                                    </constraints>
                                 </imageView>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vS2-C8-ENM">
                                     <rect key="frame" x="47.5" y="16" width="0.5" height="25"/>
@@ -43,7 +47,7 @@
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="trailing" secondItem="vS2-C8-ENM" secondAttribute="trailing" id="AGX-OH-cc2"/>
-                                <constraint firstItem="WdV-Zb-WWV" firstAttribute="leading" secondItem="Tps-RT-id8" secondAttribute="leading" constant="16" id="Emk-6d-Lxt"/>
+                                <constraint firstItem="WdV-Zb-WWV" firstAttribute="centerX" secondItem="Tps-RT-id8" secondAttribute="centerX" id="Ohd-fc-X7U"/>
                                 <constraint firstAttribute="width" constant="48" id="OrG-0J-Ze9"/>
                                 <constraint firstAttribute="bottom" secondItem="vS2-C8-ENM" secondAttribute="bottom" constant="16" id="bzW-98-khJ"/>
                                 <constraint firstItem="WdV-Zb-WWV" firstAttribute="centerY" secondItem="Tps-RT-id8" secondAttribute="centerY" id="pfu-gd-oy0"/>
@@ -54,7 +58,11 @@
                             <rect key="frame" x="366" y="0.0" width="48" height="57"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="message.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="d3w-IT-uIf">
-                                    <rect key="frame" x="10" y="18.5" width="22" height="19.5"/>
+                                    <rect key="frame" x="13" y="17.5" width="22" height="21.5"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="22" id="HTd-nG-cY9"/>
+                                        <constraint firstAttribute="height" constant="22" id="Wdp-xA-AcG"/>
+                                    </constraints>
                                 </imageView>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ag3-ft-1Td">
                                     <rect key="frame" x="0.0" y="16" width="0.5" height="25"/>
@@ -67,11 +75,11 @@
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="bottom" secondItem="Ag3-ft-1Td" secondAttribute="bottom" constant="16" id="Cp2-RQ-NOg"/>
-                                <constraint firstAttribute="trailing" secondItem="d3w-IT-uIf" secondAttribute="trailing" constant="16" id="R31-qu-CV3"/>
                                 <constraint firstItem="Ag3-ft-1Td" firstAttribute="leading" secondItem="uKx-09-NEi" secondAttribute="leading" id="Rv0-dv-tAw"/>
                                 <constraint firstItem="d3w-IT-uIf" firstAttribute="centerY" secondItem="uKx-09-NEi" secondAttribute="centerY" id="X3R-Yo-2Xe"/>
                                 <constraint firstItem="Ag3-ft-1Td" firstAttribute="top" secondItem="uKx-09-NEi" secondAttribute="top" constant="16" id="cFb-CL-vYT"/>
                                 <constraint firstAttribute="width" constant="48" id="eRK-bs-D0F"/>
+                                <constraint firstItem="d3w-IT-uIf" firstAttribute="centerX" secondItem="uKx-09-NEi" secondAttribute="centerX" id="wM8-qx-hEa"/>
                             </constraints>
                         </view>
                     </subviews>
@@ -119,7 +127,7 @@
         </view>
     </objects>
     <resources>
-        <image name="call" width="24" height="24"/>
         <image name="message.fill" catalog="system" width="64" height="56"/>
+        <image name="phone.fill" catalog="system" width="64" height="56"/>
     </resources>
 </document>
