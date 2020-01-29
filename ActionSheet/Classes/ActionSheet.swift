@@ -45,9 +45,10 @@ public class ActionSheet {
         }
     }
     
-    public func dismiss(){
+    public func dismiss(_ completionHandler: @escaping (() -> Void) = {}){
         actionSheetController?.dismiss() {
             self.removeReferences()
+            completionHandler()
         }
     }
     
