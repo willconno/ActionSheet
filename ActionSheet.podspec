@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
                        DESC
 
   s.homepage         = 'https://github.com/willconno/ActionSheet'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.screenshots     = 'https://raw.githubusercontent.com/willconno/ActionSheet/master/Screenshots/Screenshot1.png', 'https://raw.githubusercontent.com/willconno/ActionSheet/master/Screenshots/Screenshot2.png'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'William Connelly' => 'connelly.william@gmail.com' }
   s.source           = { :git => 'https://github.com/willconno/ActionSheet.git', :tag => s.version.to_s }
